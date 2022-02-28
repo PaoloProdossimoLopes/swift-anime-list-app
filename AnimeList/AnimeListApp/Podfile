@@ -1,0 +1,26 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+#Firebase dependencies
+def firebase_dependencies
+  
+end
+
+#Dependencies for tests
+def test_dependencies
+  
+end
+
+#project scenes dependencies
+def anime_list_packages_dependecies
+  
+end
+
+#Start when run ```Pod install``` command
+target 'AnimeListApp' do
+  use_frameworks!
+  
+  firebase_dependencies
+  test_dependencies
+  anime_list_packages_dependecies
+end
