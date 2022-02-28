@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ANLIB
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -24,7 +25,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     private func startApplication(_ window: UIWindow) {
         router = AppRouter(window: window)
         coordinator = AppCoordinator(router: router)
-        coordinator.present(animated: true, onDismissed: nil)
+        coordinator.start()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) { /*...*/ }

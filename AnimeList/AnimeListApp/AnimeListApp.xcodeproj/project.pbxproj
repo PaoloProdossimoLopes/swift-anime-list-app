@@ -12,12 +12,6 @@
 		B18F93FB27CC6538000A0673 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18F93FA27CC6538000A0673 /* SceneDelegate.swift */; };
 		B18F940227CC653B000A0673 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B18F940127CC653B000A0673 /* Assets.xcassets */; };
 		B18F940527CC653B000A0673 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18F940327CC653B000A0673 /* LaunchScreen.storyboard */; };
-		B18F941727CC6716000A0673 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18F941527CC6716000A0673 /* Coordinator.swift */; };
-		B18F941827CC6716000A0673 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18F941627CC6716000A0673 /* CoordinatorProtocol.swift */; };
-		B18F941D27CC6740000A0673 /* ModalRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18F941A27CC6740000A0673 /* ModalRouter.swift */; };
-		B18F941E27CC6740000A0673 /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18F941B27CC6740000A0673 /* NavigationRouter.swift */; };
-		B18F941F27CC6740000A0673 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18F941C27CC6740000A0673 /* Router.swift */; };
-		B18F942127CC676B000A0673 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18F942027CC676B000A0673 /* AppRouter.swift */; };
 		B18F942327CC6790000A0673 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18F942227CC6790000A0673 /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,12 +24,6 @@
 		B18F940127CC653B000A0673 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B18F940427CC653B000A0673 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B18F940627CC653B000A0673 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B18F941527CC6716000A0673 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		B18F941627CC6716000A0673 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
-		B18F941A27CC6740000A0673 /* ModalRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalRouter.swift; sourceTree = "<group>"; };
-		B18F941B27CC6740000A0673 /* NavigationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
-		B18F941C27CC6740000A0673 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		B18F942027CC676B000A0673 /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		B18F942227CC6790000A0673 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		B69018AAB16874D459A01FF9 /* Pods_AnimeListApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimeListApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -58,7 +46,6 @@
 				17209A3E283C2CC509D38F1B /* Pods-AnimeListApp.debug.xcconfig */,
 				1E5D6A1EED2F7D92833B9FC2 /* Pods-AnimeListApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -84,7 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				B18F940E27CC6639000A0673 /* App */,
-				B18F940F27CC664C000A0673 /* Pattern */,
 				B18F940D27CC6635000A0673 /* Scene */,
 				B18F940C27CC657A000A0673 /* Default */,
 				B18F940627CC653B000A0673 /* Info.plist */,
@@ -118,35 +104,6 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		B18F940F27CC664C000A0673 /* Pattern */ = {
-			isa = PBXGroup;
-			children = (
-				B18F941927CC671F000A0673 /* Router */,
-				B18F941427CC670E000A0673 /* Coordinator */,
-			);
-			path = Pattern;
-			sourceTree = "<group>";
-		};
-		B18F941427CC670E000A0673 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				B18F941527CC6716000A0673 /* Coordinator.swift */,
-				B18F941627CC6716000A0673 /* CoordinatorProtocol.swift */,
-			);
-			path = Coordinator;
-			sourceTree = "<group>";
-		};
-		B18F941927CC671F000A0673 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				B18F942027CC676B000A0673 /* AppRouter.swift */,
-				B18F941A27CC6740000A0673 /* ModalRouter.swift */,
-				B18F941B27CC6740000A0673 /* NavigationRouter.swift */,
-				B18F941C27CC6740000A0673 /* Router.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
 		E5E97AB8327C8306B088C40B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +123,7 @@
 				B18F93F127CC6538000A0673 /* Sources */,
 				B18F93F227CC6538000A0673 /* Frameworks */,
 				B18F93F327CC6538000A0673 /* Resources */,
+				3CEE1767F9CC706D2982446A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -222,6 +180,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3CEE1767F9CC706D2982446A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnimeListApp/Pods-AnimeListApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnimeListApp/Pods-AnimeListApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AnimeListApp/Pods-AnimeListApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6B661EDDD279F0F2A06C48CB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -251,15 +226,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B18F941D27CC6740000A0673 /* ModalRouter.swift in Sources */,
 				B18F93F927CC6538000A0673 /* AppDelegate.swift in Sources */,
-				B18F941E27CC6740000A0673 /* NavigationRouter.swift in Sources */,
-				B18F941F27CC6740000A0673 /* Router.swift in Sources */,
-				B18F942127CC676B000A0673 /* AppRouter.swift in Sources */,
 				B18F93FB27CC6538000A0673 /* SceneDelegate.swift in Sources */,
 				B18F942327CC6790000A0673 /* AppCoordinator.swift in Sources */,
-				B18F941827CC6716000A0673 /* CoordinatorProtocol.swift in Sources */,
-				B18F941727CC6716000A0673 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

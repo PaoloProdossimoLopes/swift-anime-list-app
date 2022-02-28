@@ -1,0 +1,6 @@
+framework module ANAuth {
+  umbrella header "ANAuth-umbrella.h"
+
+  export *
+  module * { export * }
+}

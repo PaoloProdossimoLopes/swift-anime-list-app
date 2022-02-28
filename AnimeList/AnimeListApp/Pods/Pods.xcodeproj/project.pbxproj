@@ -7,59 +7,199 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		51C5772F0216FA2A7D396079DC7F773B /* Pods-AnimeListApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 113AE31EBC1D3ACDF2AF2836541B9685 /* Pods-AnimeListApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C754667B718FE1A937D72D08AB29364F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		E4C0E55CBCB2893E21E8E029A5600986 /* Pods-AnimeListApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D963A78D13302AB1288F8797AD3A4396 /* Pods-AnimeListApp-dummy.m */; };
+		05360A23986EF971E3F9379D6119EBAA /* ANAuth-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F93262022BC0817393284141D7FB7966 /* ANAuth-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28171E8131E698BA25CB3356B6D9F6D6 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB369A652696AAA5779B0BCAD240AB90 /* LoginViewModel.swift */; };
+		29470FF1F634D33B3EF8FAF3CAAE4EF6 /* Pods-AN-LIB_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6495622F8BDDE63B6651918DFEFA9B23 /* Pods-AN-LIB_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F4089F23A50B40A070BB31B365F638B /* ANAuth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E8C9612B45C4CC55C3ADF2D8104253 /* ANAuth-dummy.m */; };
+		3564D191E62E927EDCDF7F23CE215597 /* AN-LIB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C71FF26B2D3B4FD077520FB616A8DE5 /* AN-LIB-dummy.m */; };
+		521B85CD51599B81BBEFB1EA28A60BF7 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E642D0D15121F029795972ED311A0A3 /* LoginService.swift */; };
+		6BD94953D7CF9BBCBC70EF21A901C006 /* Pods-AN-LIB_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF455BAB55F35DEBAE7E1AD234BB762A /* Pods-AN-LIB_Example-dummy.m */; };
+		6DB4A48C068625D3C0A2AB38CF42848C /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DD26A0DD16DBA6BC40BAF49CC74C15 /* NavigationRouter.swift */; };
+		6E02C2890112EEE5E524712F2E15CBC8 /* ANAuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF731A3B96D783E60036EEA13CA9CF /* ANAuthCoordinator.swift */; };
+		7147D018C87D2475CB54C310A44D174A /* ANViewLayoutConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300A607535E6A6BCF8FF3D6C7DA5F1F6 /* ANViewLayoutConfigurator.swift */; };
+		7696D40ACD73D9ADBF7D0A084CEFE219 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		7AB858892C66C424926E442334CD8676 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF81F8F9CEB6A7AD3088650AB0A2140 /* AppRouter.swift */; };
+		8180AED3428172B4B54C3EF569EB89FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		82BE83BC0F7FA1F935E322B0693D1448 /* ObjectLayoutAplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE11022CA3B33E2D40E068E90C4C496 /* ObjectLayoutAplayer.swift */; };
+		88FFD318B45EFBDDBB8919677B481BC3 /* ANLIB-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EBC90AD8CE41E983DCB914DCF40E6F4 /* ANLIB-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92EBEB5FAFE689624FF43699F9211FF6 /* Pods-AnimeListApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B8DE76DF35187A559328207AB16D4E9 /* Pods-AnimeListApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		994AC5B82B5F689A6E556E940FE14CD8 /* Pods-AN-LIB_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F9354BE2BE825A7C59C77B1D6282840 /* Pods-AN-LIB_Tests-dummy.m */; };
+		9EF1365FA9D4DAB4C7A53DA547889FA7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C881CC46A21BE6069AA6E8D791E3480D /* LoginViewController.swift */; };
+		A6388DBA852099B503A844B94A66918E /* Pods-AnimeListApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD1B7169F75748B403650E188DFE5E3 /* Pods-AnimeListApp-dummy.m */; };
+		B125D9789A2A76E23A4AE02C6127C9DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C99ACEBC3FBFE4C320E5EEA13FAAFA3 /* ViewController.swift */; };
+		B819269A9ABE5B095401EE70DF155510 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1D7164AA2E28270750B90881DB4CAC /* CoordinatorProtocol.swift */; };
+		B82D05D2E39F2153F59E4330812C6A7D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A3D0D8CD6B8D907496B2A085405A71 /* Router.swift */; };
+		BAED046F22ECB698D667C49F676DB887 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		CC8C7581EF07C5ACE239A1CED723E54D /* ModalRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75128CEE656E2B03E55B19B30F06CE87 /* ModalRouter.swift */; };
+		DF85DF2DD7B5FBC0C49D6FEE421A3C1F /* Pods-AN-LIB_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B1C6BC68AF42A9E98ED345F14FDBC97 /* Pods-AN-LIB_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1D3247C2F06412E2E3B12610A5C422B /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7841C0FF29E1F39AEE301BA8CA3F9CF2 /* UIView+Extensions.swift */; };
+		E26E5735646E4E8DADD893BBECA2AF3C /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B850A9DF6B1F8247BDDA4C8E208373 /* LoginCoordinator.swift */; };
+		E7EE6C4FA9C2B01DC34DD4F5FEFF3550 /* ANLIB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B10D95F1055350681F4DF9C23000F06 /* ANLIB-dummy.m */; };
+		EB9688E082F4E749D5C3DE785B8F58F1 /* AN-LIB-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 459C816DF88A64D2B7D01EB12FF2FE38 /* AN-LIB-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC6AA3A884AA4F5EC7AE6477625A12F3 /* ConstraintableLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1601AD15FC478EDD0BC586BF7FE2E7A /* ConstraintableLayout.swift */; };
+		F0F7B1EC6E80DFF44143DDBF0D841B9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAFFBFDE74382D5E8FD0085E5403154 /* AppDelegate.swift */; };
+		F23F0FC29FAFA292FAF070BBD6697F69 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5E306179B111D5BE73BBC7EE8DA400 /* LoginView.swift */; };
+		F6ECE2C1A8FD2D5593F91BC3F2CA2C6D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF19E40CB663FEDCE3A608E22A67D2 /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4E965CAB11591E1E0E164DB748BE5529 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58001725CB17EF43762DCD8F983D43D9;
+			remoteInfo = ANLIB;
+		};
+		98D86B2117C1DE9BC243F29DCE76D332 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58001725CB17EF43762DCD8F983D43D9;
+			remoteInfo = ANLIB;
+		};
+		DF27AD3309B71E8DE4A595B807690200 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2260E6933C5B7F6859E109A1415D8713;
+			remoteInfo = ANAuth;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		0CB76F77AF0BA9CDD72AB3A6F5D77B62 /* Pods-AnimeListApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AnimeListApp.modulemap"; sourceTree = "<group>"; };
-		113AE31EBC1D3ACDF2AF2836541B9685 /* Pods-AnimeListApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AnimeListApp-umbrella.h"; sourceTree = "<group>"; };
-		2196A161E7DAEF6E43BD93F8C21A0794 /* Pods-AnimeListApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AnimeListApp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4FBCAAD913674092688A3EBCE9E9496E /* Pods-AnimeListApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AnimeListApp-acknowledgements.plist"; sourceTree = "<group>"; };
-		68DBC395405313C7FC574A7992C39C79 /* Pods-AnimeListApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnimeListApp.release.xcconfig"; sourceTree = "<group>"; };
-		6C3607E59BE2C8D96E35B976FBBDFA0C /* Pods-AnimeListApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AnimeListApp-Info.plist"; sourceTree = "<group>"; };
+		0089A87E277A9C7C8BB32190745F3051 /* ANLIB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ANLIB.release.xcconfig; sourceTree = "<group>"; };
+		0B1C6BC68AF42A9E98ED345F14FDBC97 /* Pods-AN-LIB_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AN-LIB_Tests-umbrella.h"; sourceTree = "<group>"; };
+		119DA73EADF0A3C23DC4661BD9B99A18 /* Pods-AnimeListApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AnimeListApp.modulemap"; sourceTree = "<group>"; };
+		15132C5719AC6D38D5D11822BEBCECD7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		19B5EB32233F909245C5F0B808C3568E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		24A3D0D8CD6B8D907496B2A085405A71 /* Router.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		28B09BC2D4A4F5E830A6C76166DA04AE /* ANAuth.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ANAuth.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2ACF76DD2A2F4D9E1D5D32B19D0A19AC /* Pods-AnimeListApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AnimeListApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		300A607535E6A6BCF8FF3D6C7DA5F1F6 /* ANViewLayoutConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ANViewLayoutConfigurator.swift; sourceTree = "<group>"; };
+		442AA2737B60CA85A744EA65E8A934DA /* ANLIB.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ANLIB.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		44F49602FB9DDCC6ADB5E8B5910CBA49 /* ANLIB.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ANLIB.modulemap; sourceTree = "<group>"; };
+		459C816DF88A64D2B7D01EB12FF2FE38 /* AN-LIB-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AN-LIB-umbrella.h"; sourceTree = "<group>"; };
+		4C71FF26B2D3B4FD077520FB616A8DE5 /* AN-LIB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AN-LIB-dummy.m"; sourceTree = "<group>"; };
+		4DF81F8F9CEB6A7AD3088650AB0A2140 /* AppRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		53F8717F9A2EBCB2BEB8403E323A7F17 /* ANLIB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ANLIB.debug.xcconfig; sourceTree = "<group>"; };
+		5AE11022CA3B33E2D40E068E90C4C496 /* ObjectLayoutAplayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ObjectLayoutAplayer.swift; sourceTree = "<group>"; };
+		5B8DE76DF35187A559328207AB16D4E9 /* Pods-AnimeListApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AnimeListApp-umbrella.h"; sourceTree = "<group>"; };
+		61A0919F5AFDF6AE1F3FA70D9B70FB52 /* ANLIB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ANLIB-prefix.pch"; sourceTree = "<group>"; };
+		6495622F8BDDE63B6651918DFEFA9B23 /* Pods-AN-LIB_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AN-LIB_Example-umbrella.h"; sourceTree = "<group>"; };
+		672225CAF8F8051A36194055B4DB76DE /* Pods-AnimeListApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnimeListApp.release.xcconfig"; sourceTree = "<group>"; };
+		67B9BFE416458911E8C73E05795E1B23 /* ANLIB */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ANLIB; path = ANLIB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CAFFBFDE74382D5E8FD0085E5403154 /* AppDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		75128CEE656E2B03E55B19B30F06CE87 /* ModalRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ModalRouter.swift; sourceTree = "<group>"; };
+		752CE8F8A727818946833F6C120AA7DE /* ANAuth-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ANAuth-prefix.pch"; sourceTree = "<group>"; };
+		7841C0FF29E1F39AEE301BA8CA3F9CF2 /* UIView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		7F9354BE2BE825A7C59C77B1D6282840 /* Pods-AN-LIB_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AN-LIB_Tests-dummy.m"; sourceTree = "<group>"; };
+		8B27F9B9EBAE12B74C41070491CDD01B /* ANAuth */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ANAuth; path = ANAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C99ACEBC3FBFE4C320E5EEA13FAAFA3 /* ViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		91E8C9612B45C4CC55C3ADF2D8104253 /* ANAuth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ANAuth-dummy.m"; sourceTree = "<group>"; };
+		94098A499445C8E653836979B11347DC /* ANAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ANAuth.release.xcconfig; sourceTree = "<group>"; };
+		966838369BBEDC36C575B1DF182E9DBF /* ANAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ANAuth.debug.xcconfig; sourceTree = "<group>"; };
+		9B10D95F1055350681F4DF9C23000F06 /* ANLIB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ANLIB-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B4785E8198DC829E11EA7C38E15BD5D2 /* Pods-AnimeListApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnimeListApp.debug.xcconfig"; sourceTree = "<group>"; };
+		9E642D0D15121F029795972ED311A0A3 /* LoginService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		9EBC90AD8CE41E983DCB914DCF40E6F4 /* ANLIB-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ANLIB-umbrella.h"; sourceTree = "<group>"; };
+		B2AF731A3B96D783E60036EEA13CA9CF /* ANAuthCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ANAuthCoordinator.swift; sourceTree = "<group>"; };
+		C0FF19E40CB663FEDCE3A608E22A67D2 /* Coordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		C1CA6300C7B6CB5CF7FD0963F068F399 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C7343C4D3DB8DC1637FFEDAA299AE594 /* Pods-AnimeListApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AnimeListApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C881CC46A21BE6069AA6E8D791E3480D /* LoginViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C9506FEE505DF544A9E317C3FCC95DED /* Pods-AnimeListApp */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-AnimeListApp"; path = Pods_AnimeListApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D963A78D13302AB1288F8797AD3A4396 /* Pods-AnimeListApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AnimeListApp-dummy.m"; sourceTree = "<group>"; };
+		CB17F3515D2B1115ED1E4B1312065E21 /* ANLIB-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ANLIB-Info.plist"; sourceTree = "<group>"; };
+		CC5AB48E60D959B6874E352477CAAA44 /* ANAuth-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ANAuth-Info.plist"; sourceTree = "<group>"; };
+		CD5E306179B111D5BE73BBC7EE8DA400 /* LoginView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CF455BAB55F35DEBAE7E1AD234BB762A /* Pods-AN-LIB_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AN-LIB_Example-dummy.m"; sourceTree = "<group>"; };
+		D1601AD15FC478EDD0BC586BF7FE2E7A /* ConstraintableLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConstraintableLayout.swift; sourceTree = "<group>"; };
+		D53771745976A805284C791A17A96E35 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		E2B850A9DF6B1F8247BDDA4C8E208373 /* LoginCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		E5082D8FA695430A965C1AACE0316B59 /* Pods-AnimeListApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnimeListApp.debug.xcconfig"; sourceTree = "<group>"; };
+		EAA05A0E6833E6C66417A5E2B610548B /* Pods-AnimeListApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AnimeListApp-Info.plist"; sourceTree = "<group>"; };
+		EB369A652696AAA5779B0BCAD240AB90 /* LoginViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		EDD1B7169F75748B403650E188DFE5E3 /* Pods-AnimeListApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AnimeListApp-dummy.m"; sourceTree = "<group>"; };
+		F21CB96131FA1C6CD1BD0B037E59AF42 /* ANAuth.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ANAuth.modulemap; sourceTree = "<group>"; };
+		F2DD26A0DD16DBA6BC40BAF49CC74C15 /* NavigationRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
+		F93262022BC0817393284141D7FB7966 /* ANAuth-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ANAuth-umbrella.h"; sourceTree = "<group>"; };
+		FA1D7164AA2E28270750B90881DB4CAC /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		FCA7B558450ECF605884A409768111B2 /* Pods-AnimeListApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AnimeListApp-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FA3B4C81E3BCD3DF00F85730A155EFDD /* Frameworks */ = {
+		4595216B6CF8059D8F3F48CE333A51D6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C754667B718FE1A937D72D08AB29364F /* Foundation.framework in Frameworks */,
+				BAED046F22ECB698D667C49F676DB887 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B3846CE5C98E463A0196D7F3354D4B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7696D40ACD73D9ADBF7D0A084CEFE219 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A5F507F61883EB986E16E483A5E3C23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8180AED3428172B4B54C3EF569EB89FC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		19B57F4C80D8C386A6669EE7AA3DBB94 /* Products */ = {
+		0158383A32CCD6BF4B8DB5E3AB0EB93F /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C9506FEE505DF544A9E317C3FCC95DED /* Pods-AnimeListApp */,
+				88FD0E71E4AB0AE7DE7E2ECE3C19B93C /* Pods-AnimeListApp */,
 			);
-			name = Products;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		49A629207AF0E9C944879940D905AF7F /* Pods-AnimeListApp */ = {
+		28977E48496C8664D574FE219DAF19F8 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				0CB76F77AF0BA9CDD72AB3A6F5D77B62 /* Pods-AnimeListApp.modulemap */,
-				2196A161E7DAEF6E43BD93F8C21A0794 /* Pods-AnimeListApp-acknowledgements.markdown */,
-				4FBCAAD913674092688A3EBCE9E9496E /* Pods-AnimeListApp-acknowledgements.plist */,
-				D963A78D13302AB1288F8797AD3A4396 /* Pods-AnimeListApp-dummy.m */,
-				6C3607E59BE2C8D96E35B976FBBDFA0C /* Pods-AnimeListApp-Info.plist */,
-				113AE31EBC1D3ACDF2AF2836541B9685 /* Pods-AnimeListApp-umbrella.h */,
-				B4785E8198DC829E11EA7C38E15BD5D2 /* Pods-AnimeListApp.debug.xcconfig */,
-				68DBC395405313C7FC574A7992C39C79 /* Pods-AnimeListApp.release.xcconfig */,
+				28B09BC2D4A4F5E830A6C76166DA04AE /* ANAuth.podspec */,
+				19B5EB32233F909245C5F0B808C3568E /* LICENSE */,
+				C1CA6300C7B6CB5CF7FD0963F068F399 /* README.md */,
 			);
-			name = "Pods-AnimeListApp";
-			path = "Target Support Files/Pods-AnimeListApp";
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		2A19CD92D5779739C605B0BC7C550C79 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				C0FF19E40CB663FEDCE3A608E22A67D2 /* Coordinator.swift */,
+				FA1D7164AA2E28270750B90881DB4CAC /* CoordinatorProtocol.swift */,
+			);
+			name = Coordinator;
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		3D8C4E21BFC47D54BCF064A73B5E3812 /* Pods-AN-LIB_Example */ = {
+			isa = PBXGroup;
+			children = (
+				CF455BAB55F35DEBAE7E1AD234BB762A /* Pods-AN-LIB_Example-dummy.m */,
+				6495622F8BDDE63B6651918DFEFA9B23 /* Pods-AN-LIB_Example-umbrella.h */,
+			);
+			name = "Pods-AN-LIB_Example";
+			path = "Pods-AN-LIB_Example";
+			sourceTree = "<group>";
+		};
+		4D4FEA46ECC96183EBE0176EF228E619 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				FE4B0AF91B5CF9CF6CF4C9530B89B5D5 /* Login */,
+			);
+			name = Scenes;
+			path = ANAuth/SOURCE/Scenes;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -70,22 +210,175 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		C7F167923C2017B22D462D0482D1C88E /* Targets Support Files */ = {
+		5854525D24952B5F7C831EA40CB76229 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				49A629207AF0E9C944879940D905AF7F /* Pods-AnimeListApp */,
+				442AA2737B60CA85A744EA65E8A934DA /* ANLIB.podspec */,
+				15132C5719AC6D38D5D11822BEBCECD7 /* LICENSE */,
+				D53771745976A805284C791A17A96E35 /* README.md */,
 			);
-			name = "Targets Support Files";
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		5B32DAEBD6675558BF40C7928670F2BB /* ANAuth */ = {
+			isa = PBXGroup;
+			children = (
+				DECD245B1341EA882A17FF20254C73E7 /* ModuleCoordinator */,
+				28977E48496C8664D574FE219DAF19F8 /* Pod */,
+				4D4FEA46ECC96183EBE0176EF228E619 /* Scenes */,
+				CFEEBD525903E1BD3D334D064B3E0556 /* Support Files */,
+			);
+			name = ANAuth;
+			path = ../../Packages/ANAuth;
+			sourceTree = "<group>";
+		};
+		5FB12333885ABCD110CE66E6570D51FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4B0B638C2673FFFEA64D0D4F523B12A /* Target Support Files */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		62CA8D10496860DF796B4F2333FF4546 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D1601AD15FC478EDD0BC586BF7FE2E7A /* ConstraintableLayout.swift */,
+				5AE11022CA3B33E2D40E068E90C4C496 /* ObjectLayoutAplayer.swift */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		711D1FFCD210ADCF8D8FCCD8CC6B0848 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				300A607535E6A6BCF8FF3D6C7DA5F1F6 /* ANViewLayoutConfigurator.swift */,
+			);
+			name = Protocols;
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		7AE45B79A41074883E19AE08389F5D56 /* AN-LIB */ = {
+			isa = PBXGroup;
+			children = (
+				4C71FF26B2D3B4FD077520FB616A8DE5 /* AN-LIB-dummy.m */,
+				459C816DF88A64D2B7D01EB12FF2FE38 /* AN-LIB-umbrella.h */,
+			);
+			name = "AN-LIB";
+			path = "AN-LIB";
+			sourceTree = "<group>";
+		};
+		7FC8EC5EAE399EF1F4702F48F49D654D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				44F49602FB9DDCC6ADB5E8B5910CBA49 /* ANLIB.modulemap */,
+				9B10D95F1055350681F4DF9C23000F06 /* ANLIB-dummy.m */,
+				CB17F3515D2B1115ED1E4B1312065E21 /* ANLIB-Info.plist */,
+				61A0919F5AFDF6AE1F3FA70D9B70FB52 /* ANLIB-prefix.pch */,
+				9EBC90AD8CE41E983DCB914DCF40E6F4 /* ANLIB-umbrella.h */,
+				53F8717F9A2EBCB2BEB8403E323A7F17 /* ANLIB.debug.xcconfig */,
+				0089A87E277A9C7C8BB32190745F3051 /* ANLIB.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../../AnimeListApp/Pods/Target Support Files/ANLIB";
+			sourceTree = "<group>";
+		};
+		88FD0E71E4AB0AE7DE7E2ECE3C19B93C /* Pods-AnimeListApp */ = {
+			isa = PBXGroup;
+			children = (
+				119DA73EADF0A3C23DC4661BD9B99A18 /* Pods-AnimeListApp.modulemap */,
+				C7343C4D3DB8DC1637FFEDAA299AE594 /* Pods-AnimeListApp-acknowledgements.markdown */,
+				2ACF76DD2A2F4D9E1D5D32B19D0A19AC /* Pods-AnimeListApp-acknowledgements.plist */,
+				EDD1B7169F75748B403650E188DFE5E3 /* Pods-AnimeListApp-dummy.m */,
+				FCA7B558450ECF605884A409768111B2 /* Pods-AnimeListApp-frameworks.sh */,
+				EAA05A0E6833E6C66417A5E2B610548B /* Pods-AnimeListApp-Info.plist */,
+				5B8DE76DF35187A559328207AB16D4E9 /* Pods-AnimeListApp-umbrella.h */,
+				E5082D8FA695430A965C1AACE0316B59 /* Pods-AnimeListApp.debug.xcconfig */,
+				672225CAF8F8051A36194055B4DB76DE /* Pods-AnimeListApp.release.xcconfig */,
+			);
+			name = "Pods-AnimeListApp";
+			path = "Target Support Files/Pods-AnimeListApp";
+			sourceTree = "<group>";
+		};
+		8A25C9F23D6D20262AC98F2E1273A0E4 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				62CA8D10496860DF796B4F2333FF4546 /* Classes */,
+				2A19CD92D5779739C605B0BC7C550C79 /* Coordinator */,
+				B8563DDE787BA630A368F1F2109BABB1 /* Extensions */,
+				711D1FFCD210ADCF8D8FCCD8CC6B0848 /* Protocols */,
+				D8B2FAE2EAD55CE591F5042ED277675B /* Router */,
+			);
+			name = Feature;
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		B8563DDE787BA630A368F1F2109BABB1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7841C0FF29E1F39AEE301BA8CA3F9CF2 /* UIView+Extensions.swift */,
+			);
+			name = Extensions;
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BF65F06DC0913F1397C340791A93DE0F /* ANLIB */ = {
+			isa = PBXGroup;
+			children = (
+				CF31263ACB10EA3BF4691995F639395D /* Example */,
+				8A25C9F23D6D20262AC98F2E1273A0E4 /* Feature */,
+				5854525D24952B5F7C831EA40CB76229 /* Pod */,
+				7FC8EC5EAE399EF1F4702F48F49D654D /* Support Files */,
+			);
+			name = ANLIB;
+			path = ../../Packages/ANLIB;
+			sourceTree = "<group>";
+		};
+		C8BEC3EA33F119CEBEF381A1E9D89274 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B32DAEBD6675558BF40C7928670F2BB /* ANAuth */,
+				BF65F06DC0913F1397C340791A93DE0F /* ANLIB */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				C8BEC3EA33F119CEBEF381A1E9D89274 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				19B57F4C80D8C386A6669EE7AA3DBB94 /* Products */,
-				C7F167923C2017B22D462D0482D1C88E /* Targets Support Files */,
+				F06BF3581D304E13AF4892DF2B88BFAB /* Products */,
+				0158383A32CCD6BF4B8DB5E3AB0EB93F /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		CF31263ACB10EA3BF4691995F639395D /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				F9810480D2E2D1D3AE8824501F08F9AA /* AN-LIB */,
+				5FB12333885ABCD110CE66E6570D51FC /* Pods */,
+			);
+			name = Example;
+			path = Example;
+			sourceTree = "<group>";
+		};
+		CFEEBD525903E1BD3D334D064B3E0556 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F21CB96131FA1C6CD1BD0B037E59AF42 /* ANAuth.modulemap */,
+				91E8C9612B45C4CC55C3ADF2D8104253 /* ANAuth-dummy.m */,
+				CC5AB48E60D959B6874E352477CAAA44 /* ANAuth-Info.plist */,
+				752CE8F8A727818946833F6C120AA7DE /* ANAuth-prefix.pch */,
+				F93262022BC0817393284141D7FB7966 /* ANAuth-umbrella.h */,
+				966838369BBEDC36C575B1DF182E9DBF /* ANAuth.debug.xcconfig */,
+				94098A499445C8E653836979B11347DC /* ANAuth.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../../AnimeListApp/Pods/Target Support Files/ANAuth";
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -96,32 +389,165 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D4B0B638C2673FFFEA64D0D4F523B12A /* Target Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7AE45B79A41074883E19AE08389F5D56 /* AN-LIB */,
+				3D8C4E21BFC47D54BCF064A73B5E3812 /* Pods-AN-LIB_Example */,
+				F086AEA8832253D2A77C8479EF1726F4 /* Pods-AN-LIB_Tests */,
+			);
+			name = "Target Support Files";
+			path = "Target Support Files";
+			sourceTree = "<group>";
+		};
+		D8B2FAE2EAD55CE591F5042ED277675B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				4DF81F8F9CEB6A7AD3088650AB0A2140 /* AppRouter.swift */,
+				75128CEE656E2B03E55B19B30F06CE87 /* ModalRouter.swift */,
+				F2DD26A0DD16DBA6BC40BAF49CC74C15 /* NavigationRouter.swift */,
+				24A3D0D8CD6B8D907496B2A085405A71 /* Router.swift */,
+			);
+			name = Router;
+			path = Router;
+			sourceTree = "<group>";
+		};
+		DECD245B1341EA882A17FF20254C73E7 /* ModuleCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				B2AF731A3B96D783E60036EEA13CA9CF /* ANAuthCoordinator.swift */,
+			);
+			name = ModuleCoordinator;
+			path = ANAuth/SOURCE/ModuleCoordinator;
+			sourceTree = "<group>";
+		};
+		F06BF3581D304E13AF4892DF2B88BFAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B27F9B9EBAE12B74C41070491CDD01B /* ANAuth */,
+				67B9BFE416458911E8C73E05795E1B23 /* ANLIB */,
+				C9506FEE505DF544A9E317C3FCC95DED /* Pods-AnimeListApp */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F086AEA8832253D2A77C8479EF1726F4 /* Pods-AN-LIB_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7F9354BE2BE825A7C59C77B1D6282840 /* Pods-AN-LIB_Tests-dummy.m */,
+				0B1C6BC68AF42A9E98ED345F14FDBC97 /* Pods-AN-LIB_Tests-umbrella.h */,
+			);
+			name = "Pods-AN-LIB_Tests";
+			path = "Pods-AN-LIB_Tests";
+			sourceTree = "<group>";
+		};
+		F9810480D2E2D1D3AE8824501F08F9AA /* AN-LIB */ = {
+			isa = PBXGroup;
+			children = (
+				6CAFFBFDE74382D5E8FD0085E5403154 /* AppDelegate.swift */,
+				8C99ACEBC3FBFE4C320E5EEA13FAAFA3 /* ViewController.swift */,
+			);
+			name = "AN-LIB";
+			path = "AN-LIB";
+			sourceTree = "<group>";
+		};
+		FE4B0AF91B5CF9CF6CF4C9530B89B5D5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E2B850A9DF6B1F8247BDDA4C8E208373 /* LoginCoordinator.swift */,
+				9E642D0D15121F029795972ED311A0A3 /* LoginService.swift */,
+				CD5E306179B111D5BE73BBC7EE8DA400 /* LoginView.swift */,
+				C881CC46A21BE6069AA6E8D791E3480D /* LoginViewController.swift */,
+				EB369A652696AAA5779B0BCAD240AB90 /* LoginViewModel.swift */,
+			);
+			name = Login;
+			path = Login;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		80397C1A7655135158F7683181DD60EF /* Headers */ = {
+		A044833F81A008DD7590FA3F2984690C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51C5772F0216FA2A7D396079DC7F773B /* Pods-AnimeListApp-umbrella.h in Headers */,
+				05360A23986EF971E3F9379D6119EBAA /* ANAuth-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB6B6A5C9391818118BE3EED1F5B8F1D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92EBEB5FAFE689624FF43699F9211FF6 /* Pods-AnimeListApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAFEFDEF9FA429A6F5D645B6060AE2B7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB9688E082F4E749D5C3DE785B8F58F1 /* AN-LIB-umbrella.h in Headers */,
+				88FFD318B45EFBDDBB8919677B481BC3 /* ANLIB-umbrella.h in Headers */,
+				29470FF1F634D33B3EF8FAF3CAAE4EF6 /* Pods-AN-LIB_Example-umbrella.h in Headers */,
+				DF85DF2DD7B5FBC0C49D6FEE421A3C1F /* Pods-AN-LIB_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		77207420977C445FC9D4CE9BF0566D08 /* Pods-AnimeListApp */ = {
+		2260E6933C5B7F6859E109A1415D8713 /* ANAuth */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 222172D0D5F63F4F9FA5D1DF0BC18931 /* Build configuration list for PBXNativeTarget "Pods-AnimeListApp" */;
+			buildConfigurationList = 05ED5A61896926CD83EBF5257A79FFFB /* Build configuration list for PBXNativeTarget "ANAuth" */;
 			buildPhases = (
-				80397C1A7655135158F7683181DD60EF /* Headers */,
-				E394D6CA1D850156A3CECF9461EC218B /* Sources */,
-				FA3B4C81E3BCD3DF00F85730A155EFDD /* Frameworks */,
-				795B5EC5D02E5A6D60110DDF6D13CDB2 /* Resources */,
+				A044833F81A008DD7590FA3F2984690C /* Headers */,
+				543C60DD0A1BA590FB6DE3AF63009CFE /* Sources */,
+				8A5F507F61883EB986E16E483A5E3C23 /* Frameworks */,
+				8CC4704FC2A1815C12D8AD0BEA96314E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CABB78425D6356E683A76BBA75796A55 /* PBXTargetDependency */,
+			);
+			name = ANAuth;
+			productName = ANAuth;
+			productReference = 8B27F9B9EBAE12B74C41070491CDD01B /* ANAuth */;
+			productType = "com.apple.product-type.framework";
+		};
+		58001725CB17EF43762DCD8F983D43D9 /* ANLIB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7DE3BCB38A6952EFCFEEA71B1CE6C21 /* Build configuration list for PBXNativeTarget "ANLIB" */;
+			buildPhases = (
+				DAFEFDEF9FA429A6F5D645B6060AE2B7 /* Headers */,
+				D2A6C610BE7589D5E1A3D746BEA72D12 /* Sources */,
+				4595216B6CF8059D8F3F48CE333A51D6 /* Frameworks */,
+				CFCA7E1FEDEF65BAD168ADB72452A8DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ANLIB;
+			productName = ANLIB;
+			productReference = 67B9BFE416458911E8C73E05795E1B23 /* ANLIB */;
+			productType = "com.apple.product-type.framework";
+		};
+		77207420977C445FC9D4CE9BF0566D08 /* Pods-AnimeListApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27311B434611AD879B9237099B2154E4 /* Build configuration list for PBXNativeTarget "Pods-AnimeListApp" */;
+			buildPhases = (
+				CB6B6A5C9391818118BE3EED1F5B8F1D /* Headers */,
+				4909B286BA8B2C40559230E8618DF7F2 /* Sources */,
+				7B3846CE5C98E463A0196D7F3354D4B2 /* Frameworks */,
+				4086FE8DFE5788BF55E7F55E430D37AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AADA6F28A76726AE8EF549D2AB263E6E /* PBXTargetDependency */,
+				EA97724E28A18FF7B3B798A076271D89 /* PBXTargetDependency */,
 			);
 			name = "Pods-AnimeListApp";
 			productName = Pods_AnimeListApp;
@@ -146,17 +572,33 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 19B57F4C80D8C386A6669EE7AA3DBB94 /* Products */;
+			productRefGroup = F06BF3581D304E13AF4892DF2B88BFAB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				2260E6933C5B7F6859E109A1415D8713 /* ANAuth */,
+				58001725CB17EF43762DCD8F983D43D9 /* ANLIB */,
 				77207420977C445FC9D4CE9BF0566D08 /* Pods-AnimeListApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		795B5EC5D02E5A6D60110DDF6D13CDB2 /* Resources */ = {
+		4086FE8DFE5788BF55E7F55E430D37AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CC4704FC2A1815C12D8AD0BEA96314E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFCA7E1FEDEF65BAD168ADB72452A8DA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -166,23 +608,79 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E394D6CA1D850156A3CECF9461EC218B /* Sources */ = {
+		4909B286BA8B2C40559230E8618DF7F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4C0E55CBCB2893E21E8E029A5600986 /* Pods-AnimeListApp-dummy.m in Sources */,
+				A6388DBA852099B503A844B94A66918E /* Pods-AnimeListApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		543C60DD0A1BA590FB6DE3AF63009CFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F4089F23A50B40A070BB31B365F638B /* ANAuth-dummy.m in Sources */,
+				6E02C2890112EEE5E524712F2E15CBC8 /* ANAuthCoordinator.swift in Sources */,
+				E26E5735646E4E8DADD893BBECA2AF3C /* LoginCoordinator.swift in Sources */,
+				521B85CD51599B81BBEFB1EA28A60BF7 /* LoginService.swift in Sources */,
+				F23F0FC29FAFA292FAF070BBD6697F69 /* LoginView.swift in Sources */,
+				9EF1365FA9D4DAB4C7A53DA547889FA7 /* LoginViewController.swift in Sources */,
+				28171E8131E698BA25CB3356B6D9F6D6 /* LoginViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2A6C610BE7589D5E1A3D746BEA72D12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3564D191E62E927EDCDF7F23CE215597 /* AN-LIB-dummy.m in Sources */,
+				E7EE6C4FA9C2B01DC34DD4F5FEFF3550 /* ANLIB-dummy.m in Sources */,
+				7147D018C87D2475CB54C310A44D174A /* ANViewLayoutConfigurator.swift in Sources */,
+				F0F7B1EC6E80DFF44143DDBF0D841B9D /* AppDelegate.swift in Sources */,
+				7AB858892C66C424926E442334CD8676 /* AppRouter.swift in Sources */,
+				EC6AA3A884AA4F5EC7AE6477625A12F3 /* ConstraintableLayout.swift in Sources */,
+				F6ECE2C1A8FD2D5593F91BC3F2CA2C6D /* Coordinator.swift in Sources */,
+				B819269A9ABE5B095401EE70DF155510 /* CoordinatorProtocol.swift in Sources */,
+				CC8C7581EF07C5ACE239A1CED723E54D /* ModalRouter.swift in Sources */,
+				6DB4A48C068625D3C0A2AB38CF42848C /* NavigationRouter.swift in Sources */,
+				82BE83BC0F7FA1F935E322B0693D1448 /* ObjectLayoutAplayer.swift in Sources */,
+				6BD94953D7CF9BBCBC70EF21A901C006 /* Pods-AN-LIB_Example-dummy.m in Sources */,
+				994AC5B82B5F689A6E556E940FE14CD8 /* Pods-AN-LIB_Tests-dummy.m in Sources */,
+				B82D05D2E39F2153F59E4330812C6A7D /* Router.swift in Sources */,
+				E1D3247C2F06412E2E3B12610A5C422B /* UIView+Extensions.swift in Sources */,
+				B125D9789A2A76E23A4AE02C6127C9DF /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		AADA6F28A76726AE8EF549D2AB263E6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ANAuth;
+			target = 2260E6933C5B7F6859E109A1415D8713 /* ANAuth */;
+			targetProxy = DF27AD3309B71E8DE4A595B807690200 /* PBXContainerItemProxy */;
+		};
+		CABB78425D6356E683A76BBA75796A55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ANLIB;
+			target = 58001725CB17EF43762DCD8F983D43D9 /* ANLIB */;
+			targetProxy = 4E965CAB11591E1E0E164DB748BE5529 /* PBXContainerItemProxy */;
+		};
+		EA97724E28A18FF7B3B798A076271D89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ANLIB;
+			target = 58001725CB17EF43762DCD8F983D43D9 /* ANLIB */;
+			targetProxy = 98D86B2117C1DE9BC243F29DCE76D332 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		48460553EEE45C148D42EBEECCDBD46C /* Debug */ = {
+		14595B4EF0BA630A12CB7DB67127F1AD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4785E8198DC829E11EA7C38E15BD5D2 /* Pods-AnimeListApp.debug.xcconfig */;
+			baseConfigurationReference = 0089A87E277A9C7C8BB32190745F3051 /* ANLIB.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -191,23 +689,92 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AnimeListApp/Pods-AnimeListApp-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ANLIB/ANLIB-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ANLIB/ANLIB-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AnimeListApp/Pods-AnimeListApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/ANLIB/ANLIB.modulemap";
+				PRODUCT_MODULE_NAME = ANLIB;
+				PRODUCT_NAME = ANLIB;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2B5B7B5ACB5974C0D77BF7E5720C0845 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94098A499445C8E653836979B11347DC /* ANAuth.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ANAuth/ANAuth-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ANAuth/ANAuth-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ANAuth/ANAuth.modulemap";
+				PRODUCT_MODULE_NAME = ANAuth;
+				PRODUCT_NAME = ANAuth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5651322063F02003331B6640287292C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 966838369BBEDC36C575B1DF182E9DBF /* ANAuth.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ANAuth/ANAuth-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ANAuth/ANAuth-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ANAuth/ANAuth.modulemap";
+				PRODUCT_MODULE_NAME = ANAuth;
+				PRODUCT_NAME = ANAuth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -342,9 +909,43 @@
 			};
 			name = Release;
 		};
-		F8EE913931359CA2ECB3F9172C525216 /* Release */ = {
+		D7BEC6E26566CDAE7F21ED1253D21F0A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68DBC395405313C7FC574A7992C39C79 /* Pods-AnimeListApp.release.xcconfig */;
+			baseConfigurationReference = 53F8717F9A2EBCB2BEB8403E323A7F17 /* ANLIB.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ANLIB/ANLIB-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ANLIB/ANLIB-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ANLIB/ANLIB.modulemap";
+				PRODUCT_MODULE_NAME = ANLIB;
+				PRODUCT_NAME = ANLIB;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E5013CB09DBE7F62CFA75E1BC46BE029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 672225CAF8F8051A36194055B4DB76DE /* Pods-AnimeListApp.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -380,14 +981,60 @@
 			};
 			name = Release;
 		};
+		F00C0C7BBF2D01845291FDA343F4B092 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5082D8FA695430A965C1AACE0316B59 /* Pods-AnimeListApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AnimeListApp/Pods-AnimeListApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AnimeListApp/Pods-AnimeListApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		222172D0D5F63F4F9FA5D1DF0BC18931 /* Build configuration list for PBXNativeTarget "Pods-AnimeListApp" */ = {
+		05ED5A61896926CD83EBF5257A79FFFB /* Build configuration list for PBXNativeTarget "ANAuth" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				48460553EEE45C148D42EBEECCDBD46C /* Debug */,
-				F8EE913931359CA2ECB3F9172C525216 /* Release */,
+				5651322063F02003331B6640287292C2 /* Debug */,
+				2B5B7B5ACB5974C0D77BF7E5720C0845 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27311B434611AD879B9237099B2154E4 /* Build configuration list for PBXNativeTarget "Pods-AnimeListApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F00C0C7BBF2D01845291FDA343F4B092 /* Debug */,
+				E5013CB09DBE7F62CFA75E1BC46BE029 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -397,6 +1044,15 @@
 			buildConfigurations = (
 				90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */,
 				9553C89E183877A5CB2F3C6801BEC129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7DE3BCB38A6952EFCFEEA71B1CE6C21 /* Build configuration list for PBXNativeTarget "ANLIB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7BEC6E26566CDAE7F21ED1253D21F0A /* Debug */,
+				14595B4EF0BA630A12CB7DB67127F1AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

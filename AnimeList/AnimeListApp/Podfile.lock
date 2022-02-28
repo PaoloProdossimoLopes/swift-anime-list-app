@@ -1,3 +1,22 @@
-PODFILE CHECKSUM: 2388a06f822b42a97ee066a845d22b947b42134b
+PODS:
+  - ANAuth (0.1.0):
+    - ANLIB
+  - ANLIB (0.1.0)
+
+DEPENDENCIES:
+  - ANAuth (from `../Packages/ANAuth`)
+  - ANLIB (from `../Packages/ANLIB`)
+
+EXTERNAL SOURCES:
+  ANAuth:
+    :path: "../Packages/ANAuth"
+  ANLIB:
+    :path: "../Packages/ANLIB"
+
+SPEC CHECKSUMS:
+  ANAuth: 6947dcb992ec2a4cd2bbd02890a71346e9151dc9
+  ANLIB: 2d46b09bdc65e0190c3a40bac5f5ecf8d2aa0fd0
+
+PODFILE CHECKSUM: 75689f2b8f050a7dfe1d6e6860df7ab41c9f751d
 
 COCOAPODS: 1.11.2

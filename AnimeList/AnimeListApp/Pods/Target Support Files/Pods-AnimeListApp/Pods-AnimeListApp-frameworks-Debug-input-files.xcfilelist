@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-AnimeListApp/Pods-AnimeListApp-frameworks.sh
+${BUILT_PRODUCTS_DIR}/ANAuth/ANAuth.framework
+${BUILT_PRODUCTS_DIR}/ANLIB/ANLIB.framework
