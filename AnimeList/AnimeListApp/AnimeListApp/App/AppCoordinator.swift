@@ -15,18 +15,18 @@ final class AppCoordinator: Coordinator {
     private let controller: UIViewController = .init()
     private lazy var navigation: UINavigationController = .init(rootViewController: controller)
     
-    private var authModuleCoordinator: ANAuthCoordinator {
+    private lazy var modalRouter: ModalNavigationRouter = {
         let router = ModalNavigationRouter(parentViewController: navigation)
         router.typeOfModal = .fullScreen
-        let coord = ANAuthCoordinator(router: router)
-        return coord
-    }
+        return router
+    }()
     
-    override init(router: Router) {
-        super.init(router: router)
-    }
+    private var authModuleCoordinator: ANAuthCoordinator!
     
     override func start() {
+        authModuleCoordinator = ANAuthCoordinator(router: modalRouter)
+        authModuleCoordinator.delegate = self
+        
         present(animated: true, onDismissed: { [weak self] in
             guard let self = self else { return }
             self.authModuleCoordinator.start()
@@ -41,5 +41,11 @@ final class AppCoordinator: Coordinator {
     private func viewFormatter(_ nav: inout UINavigationController) {
         nav.navigationBar.isHidden = true
         nav.view.backgroundColor = .red
+    }
+}
+
+extension AppCoordinator: ANAuthCoordinatorDelegate {
+    func goToHome(_ controller: LoginViewController) {
+        
     }
 }

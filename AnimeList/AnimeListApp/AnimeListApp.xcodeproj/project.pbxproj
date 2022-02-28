@@ -71,7 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				B18F940E27CC6639000A0673 /* App */,
-				B18F940D27CC6635000A0673 /* Scene */,
 				B18F940C27CC657A000A0673 /* Default */,
 				B18F940627CC653B000A0673 /* Info.plist */,
 			);
@@ -87,13 +86,6 @@
 				B18F940327CC653B000A0673 /* LaunchScreen.storyboard */,
 			);
 			path = Default;
-			sourceTree = "<group>";
-		};
-		B18F940D27CC6635000A0673 /* Scene */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Scene;
 			sourceTree = "<group>";
 		};
 		B18F940E27CC6639000A0673 /* App */ = {
