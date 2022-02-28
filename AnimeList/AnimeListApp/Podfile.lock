@@ -4,19 +4,19 @@ PODS:
   - ANLIB (0.1.0)
 
 DEPENDENCIES:
-  - ANAuth (from `../Packages/ANAuth`)
-  - ANLIB (from `../Packages/ANLIB`)
+  - ANAuth (from `../Package/ANAuth`)
+  - ANLIB (from `../Package/ANLIB`)
 
 EXTERNAL SOURCES:
   ANAuth:
-    :path: "../Packages/ANAuth"
+    :path: "../Package/ANAuth"
   ANLIB:
-    :path: "../Packages/ANLIB"
+    :path: "../Package/ANLIB"
 
 SPEC CHECKSUMS:
   ANAuth: ba2b818b635a74a9ae59c723c7aa56a71e209dfc
   ANLIB: 87860ceb191f2a7ee3977f96c4f8b42193ed657b
 
-PODFILE CHECKSUM: 75689f2b8f050a7dfe1d6e6860df7ab41c9f751d
+PODFILE CHECKSUM: 3be3a63b334134620bdfc70742e7887033ff26dc
 
 COCOAPODS: 1.11.2

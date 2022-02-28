@@ -1,0 +1,22 @@
+PODS:
+  - ANAuth (0.1.0):
+    - ANLIB
+  - ANLIB (0.1.0)
+
+DEPENDENCIES:
+  - ANAuth (from `../`)
+  - ANLIB (from `../../ANLIB`)
+
+EXTERNAL SOURCES:
+  ANAuth:
+    :path: "../"
+  ANLIB:
+    :path: "../../ANLIB"
+
+SPEC CHECKSUMS:
+  ANAuth: ba2b818b635a74a9ae59c723c7aa56a71e209dfc
+  ANLIB: 87860ceb191f2a7ee3977f96c4f8b42193ed657b
+
+PODFILE CHECKSUM: 037f4c93ba2d6962d9052274955b8f263abc901f
+
+COCOAPODS: 1.11.2

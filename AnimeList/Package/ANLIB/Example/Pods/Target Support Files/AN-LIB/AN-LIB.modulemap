@@ -1,0 +1,6 @@
+framework module AN_LIB {
+  umbrella header "AN-LIB-umbrella.h"
+
+  export *
+  module * { export * }
+}

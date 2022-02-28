@@ -1,0 +1,27 @@
+{
+  "name": "ANAuth",
+  "version": "0.1.0",
+  "summary": "A short description of ANAuth.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/PaoloProdossimoLopes/ANAuth",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "PaoloProdossimoLopes": "paolo.prodossimo.lopes@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/PaoloProdossimoLopes/ANAuth.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "source_files": "ANAuth/**/*.{swift}",
+  "dependencies": {
+    "ANLIB": [
+
+    ]
+  }
+}

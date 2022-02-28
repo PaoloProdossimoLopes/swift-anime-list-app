@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'AN-LIB_Example' do
+  pod 'AN-LIB', :path => '../'
+
+  target 'AN-LIB_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

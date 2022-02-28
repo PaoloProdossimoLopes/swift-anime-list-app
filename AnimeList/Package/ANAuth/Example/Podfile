@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'ANAuth_Example' do
+  
+  pod 'ANAuth', :path => '../'
+  pod 'ANLIB', :path => '../../ANLIB'
+  
+  target 'ANAuth_Tests' do
+    inherit! :search_paths
+  end
+end

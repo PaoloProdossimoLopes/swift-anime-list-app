@@ -13,8 +13,8 @@ end
 
 #project scenes dependencies
 def anime_list_packages_dependecies
-  pod 'ANLIB', :path => '../Packages/ANLIB'
-  pod 'ANAuth', :path => '../Packages/ANAuth'
+  pod 'ANLIB', :path => '../Package/ANLIB'
+  pod 'ANAuth', :path => '../Package/ANAuth'
 end
 
 #Start when run ```Pod install``` command

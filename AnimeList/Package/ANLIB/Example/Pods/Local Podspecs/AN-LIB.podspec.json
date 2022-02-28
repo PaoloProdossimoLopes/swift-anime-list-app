@@ -1,0 +1,22 @@
+{
+  "name": "AN-LIB",
+  "version": "0.1.0",
+  "summary": "A short description of AN-LIB.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/PaoloProdossimoLopes/AN-LIB",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "PaoloProdossimoLopes": "paolo.prodossimo.lopes@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/PaoloProdossimoLopes/AN-LIB.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "AN-LIB/Classes/**/*"
+}
