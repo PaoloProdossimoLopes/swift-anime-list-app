@@ -24,6 +24,10 @@ public final class ANAuthCoordinator: Coordinator {
         loginCoordinator?.delegate = self
         loginCoordinator?.start()
     }
+    
+    deinit {
+        print("Dealocated")
+    }
 }
 
 extension ANAuthCoordinator: LoginCoordToModuleCoordDelegate {

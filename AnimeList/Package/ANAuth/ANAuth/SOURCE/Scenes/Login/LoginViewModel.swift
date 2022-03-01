@@ -40,9 +40,6 @@ final class LoginViewModel: NSObject {
         self.coordinatorDelegate = coordinatorDelegate
         self.service = service
     }
-    
-    //MARK: - Helpers
-    
 }
 
 extension LoginViewModel: LoginViewModelProtocol {

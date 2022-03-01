@@ -16,18 +16,14 @@ final class LoginCoordinator: Coordinator {
     
     weak var delegate: LoginCoordToModuleCoordDelegate?
     
-    private var service: LoginServiceProtocol {
-        return LoginService()
-    }
-    
-    private var controller: LoginViewController!
+    private var service: LoginServiceProtocol = LoginService()
+    private lazy var viewModel: LoginViewModel = .init(self, service: service)
+    private lazy var controller: LoginViewController = .init(viewModel: viewModel)
     
     private var forgotPasswordCoordinator: ForgotPasswordCoordinator?
-//    private var registerCoordinator: Coordinator?
+    private var registerCoordinator: RegistrationCoordinator?
     
     override func start() {
-        let viewModel = LoginViewModel(self, service: service)
-        controller = LoginViewController(viewModel: viewModel)
         present(animated: true, onDismissed: {})
     }
     
@@ -49,8 +45,9 @@ extension LoginCoordinator: LoginViewModelToCoordinatorDelegate {
     }
     
     func goToRegister(_ controller: LoginViewController) {
-//        registerCoordinator = Coordinator(router: router)
-//        registerCoordinator?.start()
+        registerCoordinator = RegistrationCoordinator(router: router)
+        registerCoordinator?.delegate = self
+        registerCoordinator?.start()
     }
 }
 
@@ -58,5 +55,11 @@ extension LoginCoordinator: LoginViewModelToCoordinatorDelegate {
 extension LoginCoordinator: ForgotPasswordCoordinatorDelegate {
     func dismissMe() {
         forgotPasswordCoordinator = nil //Dealoc coord to avoid retain cycle
+    }
+}
+
+extension LoginCoordinator: RegistrationCoordinatorDelegate {
+    func dealocate() {
+        registerCoordinator = nil
     }
 }

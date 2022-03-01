@@ -49,7 +49,7 @@ final class LoginView: UIView {
     
     private(set) lazy var captionMessageWithButton: UIStackView = {
         let label = UILabel()
-        label.text = "Já possui uma conta?"
+        label.text = "Ainda não possui uma conta?"
         label.textColor = .black
         label.textAlignment = .right
         

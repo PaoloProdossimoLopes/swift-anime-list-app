@@ -40,6 +40,11 @@
 		A6388DBA852099B503A844B94A66918E /* Pods-AnimeListApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD1B7169F75748B403650E188DFE5E3 /* Pods-AnimeListApp-dummy.m */; };
 		A644FAD784A62FA9D83828033B2B9E60 /* ANViewLayoutConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B2543176ACCB48708D8AD647BED4D5 /* ANViewLayoutConfigurator.swift */; };
 		B005ED3089C05B771484657AD1D5487D /* Pods-AN-LIB_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B302236690D7EC4B081DFDC3CF92596 /* Pods-AN-LIB_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B16E9EC427CEAAEF00EABE46 /* RegistrationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16E9EC327CEAAEF00EABE46 /* RegistrationCoordinator.swift */; };
+		B16E9EC627CEABE000EABE46 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16E9EC527CEABE000EABE46 /* RegistrationViewModel.swift */; };
+		B16E9EC827CEAC6A00EABE46 /* RegistrationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16E9EC727CEAC6A00EABE46 /* RegistrationService.swift */; };
+		B16E9ECA27CEAC9700EABE46 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16E9EC927CEAC9700EABE46 /* RegistrationViewController.swift */; };
+		B16E9ECC27CEAD6B00EABE46 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16E9ECB27CEAD6B00EABE46 /* RegistrationView.swift */; };
 		B29F58E4989C270C63B0CFC7F032501B /* ANAuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D796E505870D19DB589A77E8D424D14 /* ANAuthCoordinator.swift */; };
 		C545C297D4D9180102CFC953C17CEF97 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB4DD557A003AEBC3110F7F3CC2C135 /* LoginView.swift */; };
 		C79C32E82904907D7ED586873EFE155A /* AN-LIB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90CC58C225E40A9FA668FB3F4C4D123D /* AN-LIB-dummy.m */; };
@@ -95,7 +100,7 @@
 		2ACF76DD2A2F4D9E1D5D32B19D0A19AC /* Pods-AnimeListApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AnimeListApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		2DE068E13C78EF9563923EB64CF669E5 /* ANLIB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ANLIB.debug.xcconfig; sourceTree = "<group>"; };
 		2FAD8705E6D37BB6895E2FAD7513DB31 /* FMPrimaryButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FMPrimaryButton.swift; sourceTree = "<group>"; };
-		2FB415760102BED88708F610FAB15210 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		2FB415760102BED88708F610FAB15210 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3603FF6F8069E4AF7B22186CFA6718E8 /* AN-LIB-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AN-LIB-umbrella.h"; sourceTree = "<group>"; };
 		37A70D7C73D2139D5C21664BB77596E6 /* AppDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38CDC25953F15652A32D999950A26577 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
@@ -128,30 +133,35 @@
 		959FAF5217D8AA9A013B2B1064F8B09F /* ForgotPasswordView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		96DEAB273B46C81F3E059F276684678B /* Pods-AN-LIB_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AN-LIB_Tests-dummy.m"; sourceTree = "<group>"; };
 		9992D0F31307F54636946FA65606B35D /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A3971AD6A097CEC1E54A8B4FE320B4D6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A3971AD6A097CEC1E54A8B4FE320B4D6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A653D51CE3C9B0CD60CA3F1BB9FA2774 /* ANAuth-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ANAuth-Info.plist"; sourceTree = "<group>"; };
 		ACDC607419FFD1F575C0E04AABE7D7C0 /* Coordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		B16E9EC327CEAAEF00EABE46 /* RegistrationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCoordinator.swift; sourceTree = "<group>"; };
+		B16E9EC527CEABE000EABE46 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		B16E9EC727CEAC6A00EABE46 /* RegistrationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationService.swift; sourceTree = "<group>"; };
+		B16E9EC927CEAC9700EABE46 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		B16E9ECB27CEAD6B00EABE46 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		B9B68F78FF0DFF8D9502C3E8FC69EC77 /* LoginCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		BF2E8B2BE6BD1DA22E0466522522AB2E /* ANAuth.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ANAuth.modulemap; sourceTree = "<group>"; };
 		C123E1E756B7F863AEABEA5A39FDCBCE /* ObjectLayoutAplayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ObjectLayoutAplayer.swift; sourceTree = "<group>"; };
 		C4A0A7AE3A4D7593957D531917A21711 /* LoginViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		C5F10AC61E72331CC970C9BAC3736B13 /* ModalRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ModalRouter.swift; sourceTree = "<group>"; };
-		C620EE4842714BA01E094859EC77342A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		C620EE4842714BA01E094859EC77342A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		C72670A3B1A503F6CA22EEBE7D5E3585 /* TextFieldWithImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextFieldWithImage.swift; sourceTree = "<group>"; };
 		C7343C4D3DB8DC1637FFEDAA299AE594 /* Pods-AnimeListApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AnimeListApp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C76C800215A4105558442F8DC6976E91 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		C76C800215A4105558442F8DC6976E91 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		C86F51996BBC7889932C84A254ED9B86 /* ProgressShapeLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProgressShapeLayer.swift; sourceTree = "<group>"; };
 		C9506FEE505DF544A9E317C3FCC95DED /* Pods-AnimeListApp */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-AnimeListApp"; path = Pods_AnimeListApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9B2543176ACCB48708D8AD647BED4D5 /* ANViewLayoutConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ANViewLayoutConfigurator.swift; sourceTree = "<group>"; };
-		D05F241AEA8094FC1D0F9551F587A0E0 /* ANAuth.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ANAuth.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D05F241AEA8094FC1D0F9551F587A0E0 /* ANAuth.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ANAuth.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D2431244E465E60C678E9A88D42BFC6B /* ForgotPasswordService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ForgotPasswordService.swift; sourceTree = "<group>"; };
 		D3385C187B83711BB2A4001D7B616495 /* ANAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ANAuth.release.xcconfig; sourceTree = "<group>"; };
 		DBCAFFBC42103A9E61726BF1FD0F4F01 /* StrokeColorAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StrokeColorAnimation.swift; sourceTree = "<group>"; };
 		DD7E44FE4862CBDCEE6AA9D5AA7065E1 /* ANLIB-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ANLIB-umbrella.h"; sourceTree = "<group>"; };
 		E5082D8FA695430A965C1AACE0316B59 /* Pods-AnimeListApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnimeListApp.debug.xcconfig"; sourceTree = "<group>"; };
 		EAA05A0E6833E6C66417A5E2B610548B /* Pods-AnimeListApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AnimeListApp-Info.plist"; sourceTree = "<group>"; };
-		EC47005C578AC66EB9E0C183B1C85DAC /* ANLIB.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ANLIB.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		EC47005C578AC66EB9E0C183B1C85DAC /* ANLIB.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ANLIB.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		EDAF36D9CFB4880941F362CE22F36C2B /* ANAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ANAuth.debug.xcconfig; sourceTree = "<group>"; };
 		EDD1B7169F75748B403650E188DFE5E3 /* Pods-AnimeListApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AnimeListApp-dummy.m"; sourceTree = "<group>"; };
 		FC649E597B017D3E34C4D9F99A464D53 /* ViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -198,6 +208,7 @@
 		0EBFC8024B47118B8DA4CD805CD0373F /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B16E9EC227CEAAD700EABE46 /* Registration */,
 				FE379D64398B74DEBD32DD9C0FE7E0B0 /* ForgotPassword */,
 				4DF5354AB3FD9ACD39775D01F069CAFF /* Login */,
 			);
@@ -211,7 +222,6 @@
 				96DEAB273B46C81F3E059F276684678B /* Pods-AN-LIB_Tests-dummy.m */,
 				4B302236690D7EC4B081DFDC3CF92596 /* Pods-AN-LIB_Tests-umbrella.h */,
 			);
-			name = "Pods-AN-LIB_Tests";
 			path = "Pods-AN-LIB_Tests";
 			sourceTree = "<group>";
 		};
@@ -238,7 +248,6 @@
 				CED41F37B992B6B31A0DF8F16290081A /* UIComponents */,
 				CA00EC4F6B462BF9C52846CDEE73B1F0 /* Utils */,
 			);
-			name = Feature;
 			path = Feature;
 			sourceTree = "<group>";
 		};
@@ -248,7 +257,6 @@
 				37A70D7C73D2139D5C21664BB77596E6 /* AppDelegate.swift */,
 				FC649E597B017D3E34C4D9F99A464D53 /* ViewController.swift */,
 			);
-			name = "AN-LIB";
 			path = "AN-LIB";
 			sourceTree = "<group>";
 		};
@@ -276,7 +284,6 @@
 				6685F5C62D68BA0AA7E67B8C5267EBEF /* LoginViewController.swift */,
 				C4A0A7AE3A4D7593957D531917A21711 /* LoginViewModel.swift */,
 			);
-			name = Login;
 			path = Login;
 			sourceTree = "<group>";
 		};
@@ -288,7 +295,6 @@
 				936FCD0682CE04C11CC34D66986DB75E /* NavigationRouter.swift */,
 				1046F14A324BA57DEDCB3A23EB40E626 /* Router.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
@@ -298,7 +304,6 @@
 				ACDC607419FFD1F575C0E04AABE7D7C0 /* Coordinator.swift */,
 				580241FB3486F4F66E0B49D18F1A4E60 /* CoordinatorProtocol.swift */,
 			);
-			name = Coordinator;
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
@@ -316,7 +321,6 @@
 				62EA2D6B3F47AAFA4A45ED34FB6C20A8 /* Pods-AN-LIB_Example-dummy.m */,
 				7370525CE68CB009C8B281F23D6FF39A /* Pods-AN-LIB_Example-umbrella.h */,
 			);
-			name = "Pods-AN-LIB_Example";
 			path = "Pods-AN-LIB_Example";
 			sourceTree = "<group>";
 		};
@@ -327,7 +331,6 @@
 				5B6AAA811E469ED9EA8B7DE7FABAF8F0 /* Pods-AN-LIB_Example */,
 				1AB65B28E6AF05861B0AF134A33E26E0 /* Pods-AN-LIB_Tests */,
 			);
-			name = "Target Support Files";
 			path = "Target Support Files";
 			sourceTree = "<group>";
 		};
@@ -336,7 +339,6 @@
 			children = (
 				2FAD8705E6D37BB6895E2FAD7513DB31 /* FMPrimaryButton.swift */,
 			);
-			name = Buttons;
 			path = Buttons;
 			sourceTree = "<group>";
 		};
@@ -366,7 +368,6 @@
 			children = (
 				C9B2543176ACCB48708D8AD647BED4D5 /* ANViewLayoutConfigurator.swift */,
 			);
-			name = Protocols;
 			path = Protocols;
 			sourceTree = "<group>";
 		};
@@ -379,7 +380,6 @@
 				146D6720676FFDDAEBF4A1EB4967B7CF /* StrokeAnimation.swift */,
 				DBCAFFBC42103A9E61726BF1FD0F4F01 /* StrokeColorAnimation.swift */,
 			);
-			name = ANBasicProgressView;
 			path = ANBasicProgressView;
 			sourceTree = "<group>";
 		};
@@ -405,7 +405,6 @@
 			children = (
 				C72670A3B1A503F6CA22EEBE7D5E3585 /* TextFieldWithImage.swift */,
 			);
-			name = TextFields;
 			path = TextFields;
 			sourceTree = "<group>";
 		};
@@ -417,6 +416,18 @@
 				A3971AD6A097CEC1E54A8B4FE320B4D6 /* README.md */,
 			);
 			name = Pod;
+			sourceTree = "<group>";
+		};
+		B16E9EC227CEAAD700EABE46 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				B16E9EC327CEAAEF00EABE46 /* RegistrationCoordinator.swift */,
+				B16E9EC527CEABE000EABE46 /* RegistrationViewModel.swift */,
+				B16E9EC727CEAC6A00EABE46 /* RegistrationService.swift */,
+				B16E9ECB27CEAD6B00EABE46 /* RegistrationView.swift */,
+				B16E9EC927CEAC9700EABE46 /* RegistrationViewController.swift */,
+			);
+			path = Registration;
 			sourceTree = "<group>";
 		};
 		C3008A8744D9B66325F5AAE4D2F436B8 /* Support Files */ = {
@@ -440,7 +451,6 @@
 				7664F7C39B94A0D6C67088D3405BEEA0 /* ANTextStylesFormatters.swift */,
 				8147FD7EBCC01EA91E243BB01DF93058 /* ANValidators.swift */,
 			);
-			name = Utils;
 			path = Utils;
 			sourceTree = "<group>";
 		};
@@ -449,7 +459,6 @@
 			children = (
 				60236147D915A7CD3F039592D33DD0D5 /* Target Support Files */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -460,7 +469,6 @@
 				611D4AB2108BD45489C4CE1949EF056C /* Buttons */,
 				8ECF8748D2D51EF0F9CD70675BBFCDF1 /* TextFields */,
 			);
-			name = UIComponents;
 			path = UIComponents;
 			sourceTree = "<group>";
 		};
@@ -490,7 +498,6 @@
 				38CDC25953F15652A32D999950A26577 /* UITextField+Extensions.swift */,
 				415403BC303BCD1B045FB69465ACCE9D /* UIView+Extensions.swift */,
 			);
-			name = Extensions;
 			path = Extensions;
 			sourceTree = "<group>";
 		};
@@ -500,7 +507,6 @@
 				90CC58C225E40A9FA668FB3F4C4D123D /* AN-LIB-dummy.m */,
 				3603FF6F8069E4AF7B22186CFA6718E8 /* AN-LIB-umbrella.h */,
 			);
-			name = "AN-LIB";
 			path = "AN-LIB";
 			sourceTree = "<group>";
 		};
@@ -510,7 +516,6 @@
 				036950CC841A13F8DF3B6E6419251366 /* ConstraintableLayout.swift */,
 				C123E1E756B7F863AEABEA5A39FDCBCE /* ObjectLayoutAplayer.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -549,7 +554,6 @@
 				32E255DEF5A8C7340C0C409FFA221E1D /* AN-LIB */,
 				CEBC1BF012C185797F037C32E8F4E157 /* Pods */,
 			);
-			name = Example;
 			path = Example;
 			sourceTree = "<group>";
 		};
@@ -562,7 +566,6 @@
 				9362E6A3F763E336C0678F96BEA36964 /* ForgotPasswordViewController.swift */,
 				9992D0F31307F54636946FA65606B35D /* ForgotPasswordViewModel.swift */,
 			);
-			name = ForgotPassword;
 			path = ForgotPassword;
 			sourceTree = "<group>";
 		};
@@ -723,15 +726,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				53BD39C610141298BDF1E8D1E1BD5EDE /* ANAuth-dummy.m in Sources */,
+				B16E9EC827CEAC6A00EABE46 /* RegistrationService.swift in Sources */,
 				B29F58E4989C270C63B0CFC7F032501B /* ANAuthCoordinator.swift in Sources */,
 				1C4AA4B71BEC0A3379E32F513DABA75E /* ForgotPasswordCoordinator.swift in Sources */,
+				B16E9EC627CEABE000EABE46 /* RegistrationViewModel.swift in Sources */,
+				B16E9ECC27CEAD6B00EABE46 /* RegistrationView.swift in Sources */,
 				CA7CD3A0D6C3CDB13F96BCF83D29DB76 /* ForgotPasswordService.swift in Sources */,
 				FC5F05D99C07673A4CA8ED0CB4C0038D /* ForgotPasswordView.swift in Sources */,
 				3C5BA0353E4991018E5EDA8D7DEABF25 /* ForgotPasswordViewController.swift in Sources */,
 				1DAF2F13F2E77AAFDB499BAC047866F2 /* ForgotPasswordViewModel.swift in Sources */,
 				8273261E98C044F100902D186A1DD837 /* LoginCoordinator.swift in Sources */,
+				B16E9ECA27CEAC9700EABE46 /* RegistrationViewController.swift in Sources */,
 				9B61EB89DF724EFAA79811E181F54077 /* LoginService.swift in Sources */,
 				C545C297D4D9180102CFC953C17CEF97 /* LoginView.swift in Sources */,
+				B16E9EC427CEAAEF00EABE46 /* RegistrationCoordinator.swift in Sources */,
 				1741263FC888BC824308CF217098F4E2 /* LoginViewController.swift in Sources */,
 				2D9D9ECA65BF983EF70B28EF7CE4B787 /* LoginViewModel.swift in Sources */,
 			);

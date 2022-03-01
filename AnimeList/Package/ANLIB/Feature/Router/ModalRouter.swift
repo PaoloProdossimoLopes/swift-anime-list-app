@@ -32,12 +32,20 @@ extension ModalNavigationRouter: Router {
         if navigationController.viewControllers.count == 0 {
             presentModally(viewController, animated: animated)
         } else {
+            configureStyleToPushViews()
             navigationController.pushViewController(viewController, animated: animated)
         }
     }
     
     public func dismiss(animated: Bool, onDismissed: (() -> Void)?) {
         guard let first = navigationController.viewControllers.first else { return }
+        
+        if navigationController.viewControllers.count > 1 {
+            performOnDismissed(for: first)
+            first.navigationController?.popViewController(animated: animated)
+            return
+        }
+        
         performOnDismissed(for: first)
         parentViewController.dismiss(animated: animated, completion: onDismissed)
     }
@@ -53,6 +61,10 @@ extension ModalNavigationRouter: Router {
         if showCancelButton { addCancelButton(to: viewController) }
         navigationController.isNavigationBarHidden = hideNavigationBar
         navigationController.modalPresentationStyle = typeOfModal
+    }
+    
+    private func configureStyleToPushViews() {
+        navigationController.isNavigationBarHidden = hideNavigationBar
     }
     
     private func addCancelButton(to viewController: UIViewController) {
