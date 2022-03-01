@@ -8,7 +8,14 @@
 import Foundation
 import ANLIB
 
+protocol ForgotPasswordCoordinatorDelegate: AnyObject {
+    func dismissMe()
+}
+
 final class ForgotPasswordCoordinator: Coordinator {
+    
+    //MARK: - Properties
+    weak var delegate: ForgotPasswordCoordinatorDelegate?
     
     private var service: ForgotPasswordServiceProtocol {
         return ForgotPasswordService()
@@ -25,8 +32,16 @@ final class ForgotPasswordCoordinator: Coordinator {
         return controller
     }()
     
+    //MARK: - Constructor
+    init(_ delegate: ForgotPasswordCoordinatorDelegate, router: Router) {
+        self.delegate = delegate
+        super.init(router: router)
+    }
+    
+    //MARK: - Overrides
     override func start() {
         present(animated: true, onDismissed: nil)
+        
     }
     
     override func present(animated: Bool, onDismissed: Coordinator.onDismissedCallback?) {
@@ -36,14 +51,12 @@ final class ForgotPasswordCoordinator: Coordinator {
     override func dismiss(animated: Bool, onDismissed: (Coordinator.onDismissedCallback?) = nil) {
         router.dismiss(animated: animated, onDismissed: onDismissed)
     }
-    
-    deinit {
-        print("Dealocated")
-    }
 }
 
+//MARK: - ForgotPasswordViewModelToCoordinator
 extension ForgotPasswordCoordinator: ForgotPasswordViewModelToCoordinator {
-    func closeForgotPassword() {
-        
+    func closeForgotPassword(_ controller: ForgotPasswordViewController, shouldDismiss: Bool) {
+        if shouldDismiss { dismiss(animated: true, onDismissed: nil) }
+        delegate?.dismissMe()
     }
 }

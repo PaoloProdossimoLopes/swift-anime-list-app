@@ -15,8 +15,10 @@ protocol ForgotPasswordViewDelegate: AnyObject {
 
 final class ForgotPasswordView: UIView {
     
+    //MARK: - Properties
     weak var delegate: ForgotPasswordViewDelegate?
     
+    //MARK: - UI Components
     private(set) lazy var emailToRecoveryAccountTextField: ANPrimaryTextField = {
         let tf = ANPrimaryTextField(
             self, image: "envelope", placeholder: "E-mail",
@@ -43,6 +45,7 @@ final class ForgotPasswordView: UIView {
         return button
     }()
     
+    //MARK: - Constructor
     init(_ delegate: ForgotPasswordViewDelegate?) {
         self.delegate = delegate
         super.init(frame: .zero)
@@ -52,9 +55,9 @@ final class ForgotPasswordView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
 }
 
+//MARK: - ANViewLayoutConfigurator
 extension ForgotPasswordView: ANViewLayoutConfigurator {
     func configureHierarcy() {
         addSubview(informationLabel)
@@ -90,6 +93,7 @@ extension ForgotPasswordView: ANViewLayoutConfigurator {
     }
 }
 
+//MARK: - ANPrimaryTextFieldDelegate
 extension ForgotPasswordView: ANPrimaryTextFieldDelegate {
     func notifyWhenTextFieldWasChanged() {
         delegate?.emailToRecoveryAccountWasChanged()
@@ -99,6 +103,7 @@ extension ForgotPasswordView: ANPrimaryTextFieldDelegate {
     }
 }
 
+//MARK: - ANPrimaryButtonDelegate
 extension ForgotPasswordView: ANPrimaryButtonDelegate {
     func handleButtonTapped(_ loader: ANPrimaryButtonHideDelagate) {
         delegate?.recovetyPasswordButtonHandleTapped(loader)

@@ -44,12 +44,19 @@ extension LoginCoordinator: LoginViewModelToCoordinatorDelegate {
     
     func goToForgotPassword(_ controller: LoginViewController) {
         let modalRouter = ModalNavigationRouter(parentViewController: controller)
-        forgotPasswordCoordinator = ForgotPasswordCoordinator(router: modalRouter)
+        forgotPasswordCoordinator = ForgotPasswordCoordinator(self, router: modalRouter)
         forgotPasswordCoordinator?.start()
     }
     
     func goToRegister(_ controller: LoginViewController) {
 //        registerCoordinator = Coordinator(router: router)
 //        registerCoordinator?.start()
+    }
+}
+
+//MARK: - ForgotPasswordCoordinatorDelegate
+extension LoginCoordinator: ForgotPasswordCoordinatorDelegate {
+    func dismissMe() {
+        forgotPasswordCoordinator = nil //Dealoc coord to avoid retain cycle
     }
 }

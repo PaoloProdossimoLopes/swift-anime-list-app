@@ -16,13 +16,13 @@ public protocol ANAuthCoordinatorDelegate: AnyObject {
 public final class ANAuthCoordinator: Coordinator {
     
     public weak var delegate: ANAuthCoordinatorDelegate?
-    private var loginCoordinator: LoginCoordinator!
+    private var loginCoordinator: LoginCoordinator?
     
     
     public override func start() {
         loginCoordinator = LoginCoordinator(router: router)
-        loginCoordinator.delegate = self
-        loginCoordinator.start()
+        loginCoordinator?.delegate = self
+        loginCoordinator?.start()
     }
 }
 

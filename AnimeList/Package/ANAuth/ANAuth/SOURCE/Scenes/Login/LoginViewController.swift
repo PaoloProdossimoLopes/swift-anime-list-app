@@ -10,13 +10,12 @@ import ANLIB
 
 public final class LoginViewController: UIViewController {
     
-    private var viewModel: LoginViewModelProtocol { didSet{
-        viewModel.viewDelegate = self
-    } }
-    private var customView: LoginView {
-        didSet { customView.delegate = self }
-    }
+    //MARK: - Properties
+    private var viewModel: LoginViewModelProtocol
     
+    private var customView: LoginView
+    
+    //MARK: - Constructor
     init(viewModel: LoginViewModelProtocol) {
         self.viewModel = viewModel
         self.customView = LoginView()
@@ -27,6 +26,7 @@ public final class LoginViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    //MARK: - Lifecycle
     public override func loadView() {
         super.loadView()
         view = customView
@@ -34,9 +34,9 @@ public final class LoginViewController: UIViewController {
     
     public override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.viewDelegate = self
         customView.delegate = self
     }
-
 }
 
 //MARK: - LoginViewModelToViewDelegate

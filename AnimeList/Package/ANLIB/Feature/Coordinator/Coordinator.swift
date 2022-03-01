@@ -36,11 +36,16 @@ open class Coordinator: CoordinatorProtocol {
         })
     }
     
-    public func dismiss(animated: Bool, onDismissed: (onDismissedCallback?) = nil) {
+    open func dismiss(animated: Bool, onDismissed: (onDismissedCallback?) = nil) {
         router.dismiss(animated: animated, onDismissed: onDismissed)
     }
     
-    private func removeChild(_ child: Coordinator) {
+    open func removeChildFromFatherIfNeeded(_ coordinator: inout Coordinator?) {
+        removeChild(coordinator)
+        coordinator = nil
+    }
+    
+    private func removeChild(_ child: Coordinator?) {
         guard let index = children.firstIndex(where: { $0 === child }) else { return }
         children.remove(at: index)
     }

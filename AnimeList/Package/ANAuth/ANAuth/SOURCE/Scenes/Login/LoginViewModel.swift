@@ -26,18 +26,27 @@ protocol LoginViewModelProtocol {
     func registerButtonHandleTapped(_ controller: LoginViewController)
 }
 
-final class LoginViewModel: LoginViewModelProtocol {
+final class LoginViewModel: NSObject {
    
+    //MARK: - Delegates
     weak var viewDelegate: LoginViewModelToViewDelegate?
     weak var coordinatorDelegate: LoginViewModelToCoordinatorDelegate?
     
+    //MARK: - Properties
     private let service: LoginServiceProtocol
     
+    //MARK: - Constructor
     init(_ coordinatorDelegate: LoginViewModelToCoordinatorDelegate, service: LoginServiceProtocol) {
         self.coordinatorDelegate = coordinatorDelegate
         self.service = service
     }
     
+    //MARK: - Helpers
+    
+}
+
+extension LoginViewModel: LoginViewModelProtocol {
+    //MARK: - Functions
     func textFieldUpdatedHandle() {
         
     }
@@ -47,7 +56,6 @@ final class LoginViewModel: LoginViewModelProtocol {
             loader.hideLoader()
             self.coordinatorDelegate?.goToHome(controller)
         }
-        
     }
     
     func forgotPasswordHandleTapped(_ controller: LoginViewController) {
