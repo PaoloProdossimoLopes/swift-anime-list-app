@@ -18,7 +18,7 @@ final class AppCoordinator: Coordinator {
     private lazy var authModuleCoordinator: ANAuthCoordinator = {
         let mRouter = ModalNavigationRouter(parentViewController: navigation)
         mRouter.typeOfModal = .fullScreen
-        let coord = ANAuthCoordinator(self, router: mRouter)
+        let coord = ANAuthCoordinator(router: mRouter)
         return coord
     }()
     

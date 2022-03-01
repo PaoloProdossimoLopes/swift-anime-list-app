@@ -41,7 +41,6 @@ final class ForgotPasswordCoordinator: Coordinator {
     //MARK: - Overrides
     override func start() {
         present(animated: true, onDismissed: nil)
-        
     }
     
     override func present(animated: Bool, onDismissed: Coordinator.onDismissedCallback?) {
