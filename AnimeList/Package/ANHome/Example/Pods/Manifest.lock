@@ -1,0 +1,16 @@
+PODS:
+  - ANHome (0.1.0)
+
+DEPENDENCIES:
+  - ANHome (from `../`)
+
+EXTERNAL SOURCES:
+  ANHome:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ANHome: bfd7a03d52fbd00d5e0c67d3665b1daf82e4c4a2
+
+PODFILE CHECKSUM: 177e507c23b8937f3631e095eea9fbdb426dc109
+
+COCOAPODS: 1.11.2

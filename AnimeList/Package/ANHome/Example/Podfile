@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'ANHome_Example' do
+  pod 'ANHome', :path => '../'
+
+  target 'ANHome_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

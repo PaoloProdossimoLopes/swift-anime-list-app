@@ -49,13 +49,13 @@ final class ForgotPasswordViewController: UIViewController {
 
 //MARK: - ForgotPasswordViewModelToController
 extension ForgotPasswordViewController: ForgotPasswordViewModelToController {
-    
+    //TODO:
 }
 
 //MARK: - ForgotPasswordViewDelegate
 extension ForgotPasswordViewController: ForgotPasswordViewDelegate {
     func emailToRecoveryAccountWasChanged() {
-        
+        //TODO: 
     }
     
     func recovetyPasswordButtonHandleTapped(_ loader: ANPrimaryButtonHideDelagate) {
