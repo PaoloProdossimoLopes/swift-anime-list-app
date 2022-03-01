@@ -15,6 +15,7 @@ end
 def anime_list_packages_dependecies
   pod 'ANLIB', :path => '../Package/ANLIB'
   pod 'ANAuth', :path => '../Package/ANAuth'
+  pod 'ANHome', :path => '../Package/ANHome'
 end
 
 #Start when run ```Pod install``` command

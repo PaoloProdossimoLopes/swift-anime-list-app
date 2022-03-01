@@ -177,10 +177,12 @@ code_sign_if_enabled() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/ANAuth/ANAuth.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ANHome/ANHome.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ANLIB/ANLIB.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/ANAuth/ANAuth.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ANHome/ANHome.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ANLIB/ANLIB.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
