@@ -16,7 +16,15 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "9.0"
+    "ios": "13.0"
   },
-  "source_files": "ANHome/Classes/**/*"
+  "source_files": "ANHome/**/*.{swift}",
+  "dependencies": {
+    "ANLIB": [
+
+    ],
+    "ANAuth": [
+
+    ]
+  }
 }

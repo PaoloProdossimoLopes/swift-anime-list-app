@@ -9,6 +9,7 @@ import UIKit
 
 import ANLIB
 import ANAuth
+import ANHome
 
 final class AppCoordinator: Coordinator {
     
@@ -21,15 +22,16 @@ final class AppCoordinator: Coordinator {
         return router
     }()
     
-    private var authModuleCoordinator: ANAuthCoordinator!
+    private var authModuleCoordinator: ANAuthCoordinator?
+    private var homeModuleCoordinator: HomeCoordinator?
     
     override func start() {
         authModuleCoordinator = ANAuthCoordinator(router: modalRouter)
-        authModuleCoordinator.delegate = self
+        authModuleCoordinator?.delegate = self
         
         present(animated: true, onDismissed: { [weak self] in
             guard let self = self else { return }
-            self.authModuleCoordinator.start()
+            self.authModuleCoordinator?.start()
         })
     }
     
@@ -47,5 +49,8 @@ final class AppCoordinator: Coordinator {
 extension AppCoordinator: ANAuthCoordinatorDelegate {
     func goToHome(_ controller: LoginViewController) {
         
+        let modalRouter = ModalNavigationRouter(parentViewController: controller)
+        homeModuleCoordinator = HomeCoordinator(router: modalRouter)
+        homeModuleCoordinator?.start()
     }
 }
