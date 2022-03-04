@@ -81,7 +81,7 @@ So that you can run the project follow this steps:
 ## 🪄  USAGE <a name="usage"></a>
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-_For more examples, please refer to the [Documentation](https://github.com/PPaoloProdossimoLopes/swift-anime-list-app/tree/main/DOCUMENTATION)_
+_For more examples, please refer to the [Documentation](https://github.com/PaoloProdossimoLopes/swift-anime-list-app/tree/main/DOCUMENTATION)_
 
 <p align="right"><a href="#top">🔼 BACK TO THE TOP</a></p>
 
