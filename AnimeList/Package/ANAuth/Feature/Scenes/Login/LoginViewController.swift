@@ -13,12 +13,11 @@ public final class LoginViewController: UIViewController {
     //MARK: - Properties
     private var viewModel: LoginViewModelProtocol
     
-    private var customView: LoginView
+    let customView: LoginView = .init()
     
     //MARK: - Constructor
     init(viewModel: LoginViewModelProtocol) {
         self.viewModel = viewModel
-        self.customView = LoginView()
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -34,6 +33,11 @@ public final class LoginViewController: UIViewController {
     
     public override func viewDidLoad() {
         super.viewDidLoad()
+        configureDelegates()
+    }
+    
+    //MARK: - Helpers
+    private func configureDelegates() {
         viewModel.viewDelegate = self
         customView.delegate = self
     }

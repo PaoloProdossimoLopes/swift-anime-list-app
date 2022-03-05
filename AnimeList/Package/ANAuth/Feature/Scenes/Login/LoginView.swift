@@ -109,7 +109,7 @@ extension LoginView: ANViewLayoutConfigurator {
         
         textFieldsStacks.ANStylable.applyConstraint { [weak self] view in
             guard let self = self else { return }
-            view.top(reference: self.safeAreaLayoutGuide.topAnchor, spacing: 30)
+            view.centerY(reference: self.centerYAnchor)
             view.leading(reference: self.leadingAnchor, spacing: 30)
             view.trailing(reference: self.trailingAnchor, spacing: -30)
         }

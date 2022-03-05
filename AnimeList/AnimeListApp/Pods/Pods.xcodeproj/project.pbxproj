@@ -117,7 +117,7 @@
 /* Begin PBXFileReference section */
 		0300244622BD20C289093C40E88C4155 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
 		0417E1A5F8D0344D3599A19003254223 /* Pods-AN-LIB_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AN-LIB_Tests-dummy.m"; sourceTree = "<group>"; };
-		08D58A661625295D73C81468ABE25B74 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		08D58A661625295D73C81468ABE25B74 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0B96D333CBB7FE9C64CF76A1F9ABB7B1 /* ObjectLayoutAplayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ObjectLayoutAplayer.swift; sourceTree = "<group>"; };
 		0E72CE7853FEC734CDA7D56E09A12FCF /* StrokeAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StrokeAnimation.swift; sourceTree = "<group>"; };
 		119DA73EADF0A3C23DC4661BD9B99A18 /* Pods-AnimeListApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AnimeListApp.modulemap"; sourceTree = "<group>"; };
@@ -160,11 +160,11 @@
 		6E27723B93A03FB1F05673C00A2F6468 /* ANAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ANAuth.debug.xcconfig; sourceTree = "<group>"; };
 		6ECBB9949931E9A74BA4226EAA41CB6B /* AppRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		6F13B3E9D870DE61E3A6AD4B00D26C68 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
-		70DC4CF3C78FB5C011EA7F7560FB9E52 /* ANAuth.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ANAuth.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		70DC4CF3C78FB5C011EA7F7560FB9E52 /* ANAuth.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ANAuth.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		762B3FBDD82A95CE2985EF71840A0311 /* ANLIB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ANLIB.debug.xcconfig; sourceTree = "<group>"; };
 		7EC4F7E100011CABEA05D4C773B85EC2 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = ANHome/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
-		87FFE22B2ECB90B4C6E4AFD214FDC488 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		87FFE22B2ECB90B4C6E4AFD214FDC488 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		8A93618AC355A7F78D73F0E7EB5E169E /* ANAuth-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ANAuth-Info.plist"; sourceTree = "<group>"; };
 		8B27F9B9EBAE12B74C41070491CDD01B /* ANAuth */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ANAuth; path = ANAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B4E59C6BFA44CA98DCF7A09ED31E31A /* UIView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
@@ -175,26 +175,26 @@
 		96E01D6BE3FBD1DF467A2C9FBEE02045 /* ForgotPasswordCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ForgotPasswordCoordinator.swift; sourceTree = "<group>"; };
 		979A1E7BE268BE0B173305DD5A11E4E1 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		9CFC316DCB54DCFF066069B0194D5E7E /* RegistrationCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationCoordinator.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A478CEC98E9BB6C5A7500DBBC3CBA5F4 /* ANHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ANHome.debug.xcconfig; sourceTree = "<group>"; };
-		A5FA21A0ADF96A1D9EF9C71AFE0FB16C /* ANHome.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ANHome.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A8310B4CB51087985DD799635C24DB7C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		A5FA21A0ADF96A1D9EF9C71AFE0FB16C /* ANHome.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ANHome.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A8310B4CB51087985DD799635C24DB7C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A839A44FDE0B7ADC10FC65493D05F05B /* LoginViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B12531889E4075D42CF2B1F469C1A1FC /* ANValidators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ANValidators.swift; sourceTree = "<group>"; };
 		B1DB90077A1B8E7AAF84550911F222AA /* ANHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ANHome.release.xcconfig; sourceTree = "<group>"; };
 		B4331C5F4768AB5B1982EB6A5FB95BD3 /* ANHome-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ANHome-dummy.m"; sourceTree = "<group>"; };
 		B63415720EB05D585ECA103E15F2E06F /* FMPrimaryButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FMPrimaryButton.swift; sourceTree = "<group>"; };
-		B80DF76322F9280488628878C1EDF8D3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		B80DF76322F9280488628878C1EDF8D3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		C068DA7D98AAE0119160D4E6A7FA3C4F /* FIX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FIX.swift; sourceTree = "<group>"; };
-		C0E0461363C09B5790A3D426FAA8035E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		C0E0461363C09B5790A3D426FAA8035E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		C30B5D54F911045BD34582DFD2A0D264 /* ANLIB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ANLIB-dummy.m"; sourceTree = "<group>"; };
 		C484201DF650D51D5EE1DC4921BB5D6D /* ProgressShapeLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProgressShapeLayer.swift; sourceTree = "<group>"; };
 		C7343C4D3DB8DC1637FFEDAA299AE594 /* Pods-AnimeListApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AnimeListApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C9506FEE505DF544A9E317C3FCC95DED /* Pods-AnimeListApp */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-AnimeListApp"; path = Pods_AnimeListApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF4B4462128422A38C53FC581ED8058 /* ANAuth-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ANAuth-umbrella.h"; sourceTree = "<group>"; };
-		CF0C50A14FD9117778CE0D71130497CC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		CF0C50A14FD9117778CE0D71130497CC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D9C78E46B177865659B16E136E81BF49 /* AN-LIB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AN-LIB-dummy.m"; sourceTree = "<group>"; };
-		E208754F4E5ACD7A9AACA9D98897D0E7 /* ANLIB.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ANLIB.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E208754F4E5ACD7A9AACA9D98897D0E7 /* ANLIB.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ANLIB.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E3719034AE109A270DAE755FD8956FFF /* Pods-AN-LIB_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AN-LIB_Example-umbrella.h"; sourceTree = "<group>"; };
 		E4F7177A0F6DE89075DB7711FF1BD947 /* Pods-AN-LIB_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AN-LIB_Example-dummy.m"; sourceTree = "<group>"; };
 		E5082D8FA695430A965C1AACE0316B59 /* Pods-AnimeListApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnimeListApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -263,7 +263,6 @@
 				377329FA5AB6CB192980C7F60DEBD9FE /* ForgotPasswordViewController.swift */,
 				5ABDCF606E56E6A6F6ADBEFFFA29D23E /* ForgotPasswordViewModel.swift */,
 			);
-			name = ForgotPassword;
 			path = ForgotPassword;
 			sourceTree = "<group>";
 		};
@@ -274,7 +273,6 @@
 				4CA50C46F5862757012F95DE8E3D6447 /* Pods-AN-LIB_Example */,
 				4AFBF463EE30B7835010EFA3B22235E4 /* Pods-AN-LIB_Tests */,
 			);
-			name = "Target Support Files";
 			path = "Target Support Files";
 			sourceTree = "<group>";
 		};
@@ -309,7 +307,6 @@
 			children = (
 				09200BD6CD8623EE7F16D7DE9B13EA6D /* Target Support Files */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -329,7 +326,6 @@
 				8B63BF8C12FB4FB793B5F314D77FAA3D /* ANTextStylesFormatters.swift */,
 				B12531889E4075D42CF2B1F469C1A1FC /* ANValidators.swift */,
 			);
-			name = Utils;
 			path = Utils;
 			sourceTree = "<group>";
 		};
@@ -339,7 +335,6 @@
 				1E1A8CC51149D2D9BF5FD488B5A595B1 /* Coordinator.swift */,
 				6F13B3E9D870DE61E3A6AD4B00D26C68 /* CoordinatorProtocol.swift */,
 			);
-			name = Coordinator;
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
@@ -349,7 +344,6 @@
 				0417E1A5F8D0344D3599A19003254223 /* Pods-AN-LIB_Tests-dummy.m */,
 				ED6B81CFCB2C1BC77F34BA949F12CAF3 /* Pods-AN-LIB_Tests-umbrella.h */,
 			);
-			name = "Pods-AN-LIB_Tests";
 			path = "Pods-AN-LIB_Tests";
 			sourceTree = "<group>";
 		};
@@ -359,7 +353,6 @@
 				E4F7177A0F6DE89075DB7711FF1BD947 /* Pods-AN-LIB_Example-dummy.m */,
 				E3719034AE109A270DAE755FD8956FFF /* Pods-AN-LIB_Example-umbrella.h */,
 			);
-			name = "Pods-AN-LIB_Example";
 			path = "Pods-AN-LIB_Example";
 			sourceTree = "<group>";
 		};
@@ -402,7 +395,6 @@
 				AC77A019368FC831E1AA0DA9A4C4684E /* UIComponents */,
 				339696072295A4C87CCA7A2369E44535 /* Utils */,
 			);
-			name = Feature;
 			path = Feature;
 			sourceTree = "<group>";
 		};
@@ -464,7 +456,6 @@
 				D9C78E46B177865659B16E136E81BF49 /* AN-LIB-dummy.m */,
 				3649F0B2ED3AB84103F9D197BEEEC10A /* AN-LIB-umbrella.h */,
 			);
-			name = "AN-LIB";
 			path = "AN-LIB";
 			sourceTree = "<group>";
 		};
@@ -477,7 +468,6 @@
 				A839A44FDE0B7ADC10FC65493D05F05B /* LoginViewController.swift */,
 				60AEE54E981C974C7CFEA2EBA312D537 /* LoginViewModel.swift */,
 			);
-			name = Login;
 			path = Login;
 			sourceTree = "<group>";
 		};
@@ -504,7 +494,6 @@
 				20B183CD1F9011A234ABD3A7EC4EECEE /* ConstraintableLayout.swift */,
 				0B96D333CBB7FE9C64CF76A1F9ABB7B1 /* ObjectLayoutAplayer.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -513,16 +502,14 @@
 			children = (
 				65184DAB55F1B2DB303DA3508D7F3465 /* TextFieldWithImage.swift */,
 			);
-			name = TextFields;
 			path = TextFields;
 			sourceTree = "<group>";
 		};
 		A990EFD5CA69733686BCA6A1DB5320A8 /* ANAuth */ = {
 			isa = PBXGroup;
 			children = (
-				D96C233C357A2077A57347FB208C9B90 /* ModuleCoordinator */,
+				B14E0C5727D2E09200E319B7 /* Feature */,
 				F35310BC64F9BB4C57517697AF3CF072 /* Pod */,
-				F42084707FCCB5E1C356416609BCC0FA /* Scenes */,
 				7E4499EDC3BCC678759528A6CFA1D42F /* Support Files */,
 			);
 			name = ANAuth;
@@ -536,7 +523,6 @@
 				B01853AFC038879ABC83C9321CC1B56A /* Buttons */,
 				9DB09EA7BFB2DDA6DE2F454D45FFD0F2 /* TextFields */,
 			);
-			name = UIComponents;
 			path = UIComponents;
 			sourceTree = "<group>";
 		};
@@ -545,7 +531,6 @@
 			children = (
 				66647043F9B925370E37F607B003167C /* ANViewLayoutConfigurator.swift */,
 			);
-			name = Protocols;
 			path = Protocols;
 			sourceTree = "<group>";
 		};
@@ -557,7 +542,6 @@
 				96D1BE613B6547055F5FCC3A081EBFFF /* NavigationRouter.swift */,
 				8B6F12A015BDB4A1E25802696C732CD8 /* Router.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
@@ -566,8 +550,16 @@
 			children = (
 				B63415720EB05D585ECA103E15F2E06F /* FMPrimaryButton.swift */,
 			);
-			name = Buttons;
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		B14E0C5727D2E09200E319B7 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				F42084707FCCB5E1C356416609BCC0FA /* Scenes */,
+				D96C233C357A2077A57347FB208C9B90 /* ModuleCoordinator */,
+			);
+			path = Feature;
 			sourceTree = "<group>";
 		};
 		B4FA7DED93155AA6611061E20D675752 /* Registration */ = {
@@ -579,7 +571,6 @@
 				2A292491A953038463CECC939EBE0A72 /* RegistrationViewController.swift */,
 				5FCE238ADE9D0B86FF11E1B2DB02D607 /* RegistrationViewModel.swift */,
 			);
-			name = Registration;
 			path = Registration;
 			sourceTree = "<group>";
 		};
@@ -589,7 +580,6 @@
 				F487EF1F7B86C7D9A59DED707E12086C /* AN-LIB */,
 				21B0205091A180227AC00719DD0598E9 /* Pods */,
 			);
-			name = Example;
 			path = Example;
 			sourceTree = "<group>";
 		};
@@ -629,8 +619,7 @@
 			children = (
 				2B23B3FAF9FE2686C27E96CE15FA3476 /* ANAuthCoordinator.swift */,
 			);
-			name = ModuleCoordinator;
-			path = ANAuth/SOURCE/ModuleCoordinator;
+			path = ModuleCoordinator;
 			sourceTree = "<group>";
 		};
 		E608C0ECF517342D02757FB262F97182 /* Extensions */ = {
@@ -640,7 +629,6 @@
 				0300244622BD20C289093C40E88C4155 /* UITextField+Extensions.swift */,
 				8B4E59C6BFA44CA98DCF7A09ED31E31A /* UIView+Extensions.swift */,
 			);
-			name = Extensions;
 			path = Extensions;
 			sourceTree = "<group>";
 		};
@@ -653,7 +641,6 @@
 				0E72CE7853FEC734CDA7D56E09A12FCF /* StrokeAnimation.swift */,
 				11CD9C57AC87BD86DF198E2B0575CD73 /* StrokeColorAnimation.swift */,
 			);
-			name = ANBasicProgressView;
 			path = ANBasicProgressView;
 			sourceTree = "<group>";
 		};
@@ -662,7 +649,6 @@
 			children = (
 				14C99436E18EE924341D84F81A06A0CE /* HomeCoordinator.swift */,
 			);
-			name = Home;
 			path = Home;
 			sourceTree = "<group>";
 		};
@@ -683,8 +669,7 @@
 				880CB9D1F82664CE77E29BC9E9ADA504 /* Login */,
 				B4FA7DED93155AA6611061E20D675752 /* Registration */,
 			);
-			name = Scenes;
-			path = ANAuth/SOURCE/Scenes;
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		F487EF1F7B86C7D9A59DED707E12086C /* AN-LIB */ = {
@@ -693,7 +678,6 @@
 				6A9D12235B8D802E54BF763C6179F6D6 /* AppDelegate.swift */,
 				F7FDB6E677A2739860A1BB2C7338E0DC /* ViewController.swift */,
 			);
-			name = "AN-LIB";
 			path = "AN-LIB";
 			sourceTree = "<group>";
 		};

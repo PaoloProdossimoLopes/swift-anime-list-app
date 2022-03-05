@@ -26,7 +26,7 @@ protocol LoginViewModelProtocol {
     func registerButtonHandleTapped(_ controller: LoginViewController)
 }
 
-final class LoginViewModel: NSObject {
+final class LoginViewModel: LoginViewModelProtocol {
    
     //MARK: - Delegates
     weak var viewDelegate: LoginViewModelToViewDelegate?
@@ -40,9 +40,7 @@ final class LoginViewModel: NSObject {
         self.coordinatorDelegate = coordinatorDelegate
         self.service = service
     }
-}
-
-extension LoginViewModel: LoginViewModelProtocol {
+    
     //MARK: - Functions
     func textFieldUpdatedHandle() {
         

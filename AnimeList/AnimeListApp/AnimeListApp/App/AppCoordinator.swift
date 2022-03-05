@@ -19,6 +19,7 @@ final class AppCoordinator: Coordinator {
     private lazy var modalRouter: ModalNavigationRouter = {
         let router = ModalNavigationRouter(parentViewController: navigation)
         router.typeOfModal = .fullScreen
+        router.hideNavigationBar = true
         return router
     }()
     

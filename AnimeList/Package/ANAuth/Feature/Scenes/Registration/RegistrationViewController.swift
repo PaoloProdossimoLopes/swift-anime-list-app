@@ -12,13 +12,12 @@ final class RegistrationViewController: UIViewController {
     
     //MARK: - Properties
     private var viewModel: RegistrationViewModelProtocol
-    private(set) var customView: RegistrationView
+    let customView: RegistrationView = RegistrationView()
     
     
     //MARK: - Constructor
     init(viewModel: RegistrationViewModelProtocol) {
         self.viewModel = viewModel
-        self.customView = RegistrationView()
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -34,6 +33,10 @@ final class RegistrationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureDelegates()
+    }
+    
+    private func configureDelegates() {
         customView.delegate = self
         viewModel.viewDelegate = self
     }
