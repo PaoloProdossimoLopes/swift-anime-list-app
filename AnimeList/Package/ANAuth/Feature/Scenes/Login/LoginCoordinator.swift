@@ -14,6 +14,7 @@ protocol LoginCoordToModuleCoordDelegate: AnyObject {
 
 final class LoginCoordinator: Coordinator {
     
+    //MARK: - Properties
     weak var delegate: LoginCoordToModuleCoordDelegate?
     
     private var service: LoginServiceProtocol = LoginService()
@@ -23,6 +24,7 @@ final class LoginCoordinator: Coordinator {
     private var forgotPasswordCoordinator: ForgotPasswordCoordinator?
     private var registerCoordinator: RegistrationCoordinator?
     
+    //MARK: - Overriders
     override func start() {
         present(animated: true, onDismissed: {})
     }

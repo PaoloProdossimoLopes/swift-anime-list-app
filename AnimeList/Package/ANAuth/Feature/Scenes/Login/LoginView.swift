@@ -106,7 +106,6 @@ extension LoginView: ANViewLayoutConfigurator {
     }
     
     func configureConstrants() {
-        
         textFieldsStacks.ANStylable.applyConstraint { [weak self] view in
             guard let self = self else { return }
             view.centerY(reference: self.centerYAnchor)

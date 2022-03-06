@@ -17,7 +17,6 @@ protocol RegistrationViewDelegate: AnyObject {
 final class RegistrationView: UIView {
     
     //MARK: - Properties
-    
     weak var delegate: RegistrationViewDelegate?
     
     //MARK: - UI Components

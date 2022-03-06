@@ -3,27 +3,27 @@
   
   
 
-# LOGIN VIEW CONTROLLER
+# FORGOT PASSWORD VIEW CONTROLLER
 É a classe reponsavel por conectar a view com a viewModel que contem a regra de negocio.
   
 
   
 ## Propriedades:
 ```swift
-private var viewModel: LoginViewModelProtocol
+private var viewModel: ForgotPasswordViewModelProtocol
     - intancia da viewModel para ter acesso aos seus metodos, providos pelo protocolo
 
-let customView: LoginView ...
+let customView: ForgotPasswordView ...
     - É uma constante interna porque ela precisara ser acessada na hora do teste unitario 
     - View customizada para manter as reponsabilidades o mais separadas possivel
 ```
 <p align="right"><a href="#top">🔼 BACK TO THE TOP</a></p>
-  
+
   
   
 ## INICIALIZADOR:
 ```swift
-init(viewModel: LoginViewModelProtocol) { ... }
+init(viewModel: ForgotPasswordViewModelProtocol) { ... }
     - Inicializa a viewModel, criando uma depencia testavel pelo protocolo
 ```
 <p align="right"><a href="#top">🔼 BACK TO THE TOP</a></p>
@@ -37,6 +37,9 @@ init(viewModel: LoginViewModelProtocol) { ... }
 
 ... func viewDidLoad() {...}
     - Usado para chamar o metodo que setta os delegates nescessarios
+
+... func viewDidDisappear(_ animated: Bool) {...}
+    - usado para chamar o metodo `viewDidDisapearHandle` da viewModel, sera nescessario para desalocar quando a tela sumir.
 ```
 
 
@@ -45,33 +48,25 @@ init(viewModel: LoginViewModelProtocol) { ... }
 ```swift
 private func configureDelegates()
     - Configura o binding entre controller e a viewModel (viewDelegate)
-    - Configura o binding entre a customView e a controller 
 ```
 
 
   
 ## EXTENSÕES PARA IMPLEMENTAÇOES:
-### LoginViewController: LoginViewModelToViewDelegate {...}
-Essa extensao é reponsavel por conectar a viewModel com a controller
+### ForgotPasswordViewController: ForgotPasswordViewModelToController {...}
 ```swift
-
+//Ate o momento nao faz nada ...
 ```
 </br>
   
-### LoginViewController: LoginViewDelegate {...}
-Essa extensao é reponsavel por conectar a view customizada com a controller
+### ForgotPasswordViewController: RegistrationViewModelToViewDelegate {...}
+Contem as notificaçoes enviadas da view
 ```swift
-func textFieldUpdatedHandle()
-    - Chama o metodo `textFieldUpdatedHandle` da viewModel
+func emailToRecoveryAccountWasChanged() {...}
 
-func enterButtonHandleTapped(_ loader: ANPrimaryButtonHideDelagate)
-    - Chama o metodo `enterButtonHandleTapped` da viewModel
-
-func forgotPasswordButtonHandleTapped()
-    - Chama o metodo `forgotPasswordHandleTapped` da viewModel
-
-func registerButtonHandleTapped(_ sender: UIButton)
-    - Chama o metodo `registerButtonHandleTapped` da viewModel
+func recovetyPasswordButtonHandleTapped(_ loader: ANPrimaryButtonHideDelagate) {...}
+    - Esconde o loader
+    - chama o metodo `recoveryButtonhandle` da viewModel
 ```
  </br>
   

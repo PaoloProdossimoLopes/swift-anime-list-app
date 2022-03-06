@@ -35,7 +35,7 @@ final class RegistrationViewModel: RegistrationViewModelProtocol {
     weak var coordinatorDelegate: RegistrationViewModelToCoordinatorDelegate?
     
     //MARK: - Properties
-    let service: RegistrationServiceProtocol
+    private let service: RegistrationServiceProtocol
     
     //MARK: - Constructor
     init(service: RegistrationServiceProtocol) {

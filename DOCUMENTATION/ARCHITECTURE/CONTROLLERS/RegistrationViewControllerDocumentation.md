@@ -3,27 +3,27 @@
   
   
 
-# LOGIN VIEW CONTROLLER
+# REGISTRATION VIEW CONTROLLER
 É a classe reponsavel por conectar a view com a viewModel que contem a regra de negocio.
   
 
   
 ## Propriedades:
 ```swift
-private var viewModel: LoginViewModelProtocol
+private var viewModel: RegistrationViewModelProtocol
     - intancia da viewModel para ter acesso aos seus metodos, providos pelo protocolo
 
-let customView: LoginView ...
+let customView: RegistrationView ...
     - É uma constante interna porque ela precisara ser acessada na hora do teste unitario 
     - View customizada para manter as reponsabilidades o mais separadas possivel
 ```
 <p align="right"><a href="#top">🔼 BACK TO THE TOP</a></p>
-  
+
   
   
 ## INICIALIZADOR:
 ```swift
-init(viewModel: LoginViewModelProtocol) { ... }
+init(viewModel: RegistrationViewModelProtocol) { ... }
     - Inicializa a viewModel, criando uma depencia testavel pelo protocolo
 ```
 <p align="right"><a href="#top">🔼 BACK TO THE TOP</a></p>
@@ -51,27 +51,22 @@ private func configureDelegates()
 
   
 ## EXTENSÕES PARA IMPLEMENTAÇOES:
-### LoginViewController: LoginViewModelToViewDelegate {...}
-Essa extensao é reponsavel por conectar a viewModel com a controller
+### RegistrationViewController: RegistrationViewDelegate {...}
+Essa extensao contem os metodos para configurar o layout
 ```swift
+func registerButtonHandleTapped(_ loader: ANPrimaryButtonHideDelagate) {...}
+    - Chama o metodo `registerHandleTapped` da viewModel
 
+func alreadyHaveAccountHandleTapped() {...}
+    - Chama o metodo `alreadyHaveaccountHandleTapped` da viewModel
 ```
 </br>
   
-### LoginViewController: LoginViewDelegate {...}
-Essa extensao é reponsavel por conectar a view customizada com a controller
+### RegistrationViewController: RegistrationViewModelToViewDelegate {...}
+Tem os delegates relacionados ao componente customizado do textfield
 ```swift
-func textFieldUpdatedHandle()
-    - Chama o metodo `textFieldUpdatedHandle` da viewModel
-
-func enterButtonHandleTapped(_ loader: ANPrimaryButtonHideDelagate)
-    - Chama o metodo `enterButtonHandleTapped` da viewModel
-
-func forgotPasswordButtonHandleTapped()
-    - Chama o metodo `forgotPasswordHandleTapped` da viewModel
-
-func registerButtonHandleTapped(_ sender: UIButton)
-    - Chama o metodo `registerButtonHandleTapped` da viewModel
+func updateView()
+    - Metodo ativado quando a viewModel faz algo que nescessite que a view seja atualizada.
 ```
  </br>
   

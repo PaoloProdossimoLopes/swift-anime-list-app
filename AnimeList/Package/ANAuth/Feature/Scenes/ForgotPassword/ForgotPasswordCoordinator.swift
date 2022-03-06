@@ -15,7 +15,7 @@ protocol ForgotPasswordCoordinatorDelegate: AnyObject {
 final class ForgotPasswordCoordinator: Coordinator {
     
     //MARK: - Properties
-    weak var delegate: ForgotPasswordCoordinatorDelegate?
+    private weak var delegate: ForgotPasswordCoordinatorDelegate?
     
     private var service: ForgotPasswordServiceProtocol {
         return ForgotPasswordService()

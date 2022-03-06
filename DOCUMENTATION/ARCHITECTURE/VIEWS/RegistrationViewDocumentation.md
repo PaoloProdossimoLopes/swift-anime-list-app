@@ -3,36 +3,29 @@
   
   
 
-# LOGIN VIEW
+# REGISTRATION VIEW
 É a tela onde o usuario deve poder colocar valores nos textfields e clicar nos botoes.
   
  
   
 ## PROTOCOLOS:
-#### LoginViewDelegate - AnyObject
+#### RegistrationViewDelegate - AnyObject
 Notifica a controller caso os textfields sejam alterados ou os botoes sejam clicados.
 <pre>
-func textFieldUpdatedHandle()
-    - Atualiza a cada Ativaçao do delegate do textField
+func registerButtonHandleTapped(_ loader: ANPrimaryButtonHideDelagate)
+    - Ativo quando o o delegate do botao é acionado
 
-func enterButtonHandleTapped(_ loader:)
-    - Ativa ao clicar no botao de login
-
-func forgotPasswordButtonHandleTapped()
-    - Ativa ao clicar na label
-
-func registerButtonHandleTapped(_ sender:)
-    - Ativa ao Clicar no botao de registro
+func alreadyHaveAccountHandleTapped()
+    - Ativo pelo selector reponsavel pelo botao de voltar a tela de login
 </pre>
-
 <p align="right"><a href="#top">🔼 BACK TO THE TOP</a></p>
   
   
   
 ## DEPENDENCIAS:
 <pre>
-private(set) weak var delegate: LoginViewDelegate?
-    - Delegate para as actions
+private(set) weak var delegate: RegistrationViewDelegate?
+    - Delegate para o binding entre a view e controller
     - Referencia fraca
 </pre>
 <p align="right"><a href="#top">🔼 BACK TO THE TOP</a></p>
@@ -41,25 +34,26 @@ private(set) weak var delegate: LoginViewDelegate?
   
 ## UI Components:
 <pre>
+... var nameTF: ANPrimaryTextField
+    - Textfield para a cadatrar o nome do usuario
+
+... var usernameTF: ANPrimaryTextField
+    - Textfield para a cadatrar o nome do usuario
+
 ... var emailTF: ANPrimaryTextField
-    - Campo para preencher com o Email
+    - Textfield para a cadatrar o email do usuario
 
-... var passwordTF: ANPrimaryTextField
-    - Campo para preencher com a senha
+... var passwordTF: ANPrimaryButton
+    - Textfield para a cadatrar a senha do usuario
 
-... var textFieldsStacks: UIStackView 
-    - Contem os campos de senha e email, esqueceu a senha e botao
-     de login
+... var registrationButton: ANPrimaryTextField
+    - Botao para registrar o usuario
 
-... var enterButton: ANPrimaryButton
-    - Botao de logar no app e ser direcionado para a home
+... var mainStackView: UIStackView
+    - Stack que contem os textfield de nome, username, email, password e o botao de registro
 
 ... var captionMessageWithButton: UIStackView
-    - Esse componente comporta os textos para registrar
-
-... var forgotYourPasswordButton: UILabel
-    - Esse label tem uma açao vinculada para direcionar a 
-    outra tela
+    - Satck para a construçao do texto de dois estilos com botao de voltar para a loginView
 
 </pre>
 <p align="right"><a href="#top">🔼 BACK TO THE TOP</a></p>
@@ -84,12 +78,8 @@ override init(frame: CGRect){ ... }
 ## SELECTORS:
   
 <pre>
-@objc private func forgotPasswordButtonWasTapped() { ... }
-    - Captura o clique na label que deve levar a tela 
-    de esqueceu a senha.
-    
-@objc private func registerButtonWasTapped(_ sender: UIButton)
-    - Captura o clique no botao que deve levar a tela de registro.
+@objc private func alreadyHaveAccotunButton() { ... }
+    - Captura o clique no botao dizendo que 
 </pre>
 <p align="right"><a href="#top">🔼 BACK TO THE TOP</a></p>
   
