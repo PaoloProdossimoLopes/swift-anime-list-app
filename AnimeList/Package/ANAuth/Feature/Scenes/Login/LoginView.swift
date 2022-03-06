@@ -29,7 +29,7 @@ final class LoginView: UIView {
     )
     
     private(set) lazy var passwordTF: ANPrimaryTextField = .init(
-        self, image: "lock", placeholder: "Senha",
+        self, image: "lock", placeholder: "Senha", isSecure: true,
         validation: ANValidators.validateAsWeakPasswordForce
     )
     
@@ -52,12 +52,13 @@ final class LoginView: UIView {
         label.text = "Ainda não possui uma conta?"
         label.textColor = .black
         label.textAlignment = .right
+        label.font = .systemFont(ofSize: 12)
         
         let button = UIButton()
         button.setTitle("Registrar-se", for: .normal)
         button.setTitleColor(.systemRed, for: .normal)
         button.titleLabel?.textAlignment = .left
-        button.titleLabel?.font = .boldSystemFont(ofSize: 18)
+        button.titleLabel?.font = .boldSystemFont(ofSize: 14)
         button.addTarget(self, action: #selector(registerButtonWasTapped), for: .touchUpInside)
         
         let stack = UIStackView(arrangedSubviews: [label, button])
