@@ -24,12 +24,22 @@ final class AppCoordinator: Coordinator {
     }()
     
     private var authModuleCoordinator: ANAuthCoordinator?
-    private var homeModuleCoordinator: HomeCoordinator?
+    private var homeModuleCoordinator: ANHomeModuleCoodinator?
+    
+    private var userIsLogged: Bool = true
     
     override func start() {
+        if userIsLogged {
+            homeModuleCoordinator = ANHomeModuleCoodinator(router: modalRouter)
+            present(animated: true, onDismissed: { [weak self] in
+                guard let self = self else { return }
+                self.homeModuleCoordinator?.start()
+            })
+            return
+        }
+        
         authModuleCoordinator = ANAuthCoordinator(router: modalRouter)
         authModuleCoordinator?.delegate = self
-        
         present(animated: true, onDismissed: { [weak self] in
             guard let self = self else { return }
             self.authModuleCoordinator?.start()
@@ -49,9 +59,8 @@ final class AppCoordinator: Coordinator {
 
 extension AppCoordinator: ANAuthCoordinatorDelegate {
     func goToHome(_ controller: LoginViewController) {
-        
         let modalRouter = ModalNavigationRouter(parentViewController: controller)
-        homeModuleCoordinator = HomeCoordinator(router: modalRouter)
+        homeModuleCoordinator = ANHomeModuleCoodinator(router: modalRouter)
         homeModuleCoordinator?.start()
     }
 }
