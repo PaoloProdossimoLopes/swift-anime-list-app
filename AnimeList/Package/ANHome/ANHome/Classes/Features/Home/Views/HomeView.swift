@@ -51,6 +51,15 @@ final class HomeView: UIView {
         let table = UITableView()
         table.showsVerticalScrollIndicator = false
         table.showsHorizontalScrollIndicator = false
+        table.register(
+            AllAnimeListTableViewCell.self,
+            forCellReuseIdentifier: AllAnimeListTableViewCell.identifier
+        )
+        table.rowHeight = 60
+        table.tableFooterView = UIView()
+        table.backgroundView = UIView()
+        table.separatorColor = .white
+        
         return table
     }()
     
@@ -104,8 +113,8 @@ extension HomeView: ANViewLayoutConfigurator {
         
         allAnimesTableView.ANStylable.applyConstraint { view in
             view.top(reference: allAnimesListHeaderLabel.bottomAnchor, spacing: 10)
-            view.leading(reference: leadingAnchor)
-            view.trailing(reference: trailingAnchor)
+            view.leading(reference: leadingAnchor, spacing: 20)
+            view.trailing(reference: trailingAnchor, spacing: -20)
             view.bottom(reference: safeAreaLayoutGuide.bottomAnchor)
         }
     }

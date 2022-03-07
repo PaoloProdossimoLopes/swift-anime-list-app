@@ -64,6 +64,8 @@ final class HomeViewController: UIViewController {
         let model = viewModel.getAnimeModel(at: indexPath.row)
         cell.setupInformations(model: model)
         
+        cell.selectionStyle = .none
+        
         return cell
     }
 }
@@ -78,6 +80,7 @@ extension HomeViewController: HomeViewModelToControllerDelegate {
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
             self.contentView.topCollectionView.reloadData()
+            self.contentView.allAnimesTableView.reloadData()
         }
     }
 }
@@ -101,5 +104,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return createAnimeTableViewCell(tableView, at: indexPath)
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
