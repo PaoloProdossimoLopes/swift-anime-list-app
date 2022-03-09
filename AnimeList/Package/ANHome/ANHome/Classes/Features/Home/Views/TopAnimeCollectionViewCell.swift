@@ -17,7 +17,7 @@ final class TopAnimeCollectionViewCell: UICollectionViewCell {
         image.clipsToBounds = true
         image.layer.cornerRadius = 50/2
         image.layer.borderColor = UIColor.red.cgColor
-        image.layer.borderWidth = 1
+        image.layer.borderWidth = 2
         image.backgroundColor = .red
         image.contentMode = .scaleAspectFill
         return image
@@ -43,11 +43,11 @@ extension TopAnimeCollectionViewCell: ANViewLayoutConfigurator {
     }
     
     func configureConstrants() {
-        animeImage.ANStylable.applyConstraint { view in
-            view.centerX(reference: self.centerXAnchor)
-            view.centerY(reference: self.centerYAnchor)
-            view.height(size: 50)
-            view.width(size: 50)
+        animeImage.ANStylable.applyConstraint {
+            $0.centerX(reference: centerXAnchor)
+            $0.centerY(reference: centerYAnchor)
+            $0.height(size: 50)
+            $0.width(size: 50)
         }
     }
 }

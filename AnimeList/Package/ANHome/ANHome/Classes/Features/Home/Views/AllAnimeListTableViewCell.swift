@@ -18,6 +18,7 @@ final class AllAnimeListTableViewCell: UITableViewCell {
         image.contentMode = .scaleToFill
         image.backgroundColor = .red
         image.layer.cornerRadius = 5
+        image.clipsToBounds = true
         return image
     }()
     
@@ -27,6 +28,17 @@ final class AllAnimeListTableViewCell: UITableViewCell {
         label.font = .boldSystemFont(ofSize: 16)
         label.textColor = .black
         return label
+    }()
+    
+    private(set) lazy var diclosureIndicatorImageView: UIImageView = {
+        let image = UIImage(systemName: "chevron.right")
+        let iv = UIImageView()
+        iv.image = image
+        iv.contentMode = .scaleToFill
+        iv.tintColor = .red
+        iv.layer.cornerRadius = 5
+        iv.clipsToBounds = true
+        return iv
     }()
     
     //MARK: - Constructor
@@ -49,6 +61,7 @@ extension AllAnimeListTableViewCell: ANViewLayoutConfigurator {
     func configureHierarcy() {
         addSubview(animeImage)
         addSubview(animeName)
+        addSubview(diclosureIndicatorImageView)
     }
     
     func configureConstrants() {
@@ -62,7 +75,13 @@ extension AllAnimeListTableViewCell: ANViewLayoutConfigurator {
         animeName.ANStylable.applyConstraint { view in
             view.leading(reference: animeImage.trailingAnchor, spacing: 10)
             view.top(reference: topAnchor, spacing: 10)
-            view.trailing(reference: trailingAnchor, spacing: -20)
+            view.trailing(reference: diclosureIndicatorImageView.leadingAnchor, spacing: -10)
+        }
+        
+        diclosureIndicatorImageView.ANStylable.applyConstraint {
+            $0.centerY(reference: centerYAnchor)
+            $0.trailing(reference: trailingAnchor, spacing: -10)
+            $0.width(size: 14)
         }
     }
     
