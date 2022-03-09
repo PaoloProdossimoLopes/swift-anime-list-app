@@ -76,8 +76,8 @@ final class HomeService: ServiceRequester, HomeServiceProtocol {
     private func createModel(response: ANHomeAnimeListResponse) -> [AnimeModel] {
         var list: [AnimeModel] = []
         
-        response.animeDataList.forEach {
-            let model = AnimeModel(response: $0)
+        response.animeDataList.forEach { item in
+            let model = AnimeModel(response: item)
             list.append(model)
         }
         return list

@@ -90,7 +90,7 @@ final class HomeViewModel: HomeViewModelProtocol {
     private func fetchInsideAllAPIs() {
         fetchAllAnimes()
         fetchTopAnimes()
-//        fetchRecomendedAnimes()
+        //fetchRecomendedAnimes()
     }
     
     private func fetchAllAnimes() {
