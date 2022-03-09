@@ -113,7 +113,10 @@ final class HomeViewModel: HomeViewModelProtocol {
     private func fetchTopAnimes() {
         dGroup.enter()
         service.executeRequest(.topAnimes) { [weak self] result in
-            guard let self = self else { return }
+            guard let self = self else {
+                self?.dGroup.leave()
+                return
+            }
             
             switch result {
                 case .success(let response):
@@ -130,7 +133,10 @@ final class HomeViewModel: HomeViewModelProtocol {
     private func fetchRecomendedAnimes() {
         dGroup.enter()
         service.executeRequest(.recomendedAnimed) { [weak self] result in
-            guard let self = self else { return }
+            guard let self = self else {
+                self?.dGroup.leave()
+                return
+            }
             
             switch result {
                 case .success(let response):

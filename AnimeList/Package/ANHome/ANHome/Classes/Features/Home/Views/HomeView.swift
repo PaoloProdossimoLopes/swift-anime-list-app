@@ -100,7 +100,7 @@ extension HomeView: ANViewLayoutConfigurator {
         
         topCollectionView.ANStylable.applyConstraint { view in
             view.top(reference: topCollectionHeaderLabel.bottomAnchor)
-            view.leading(reference: leadingAnchor)
+            view.leading(reference: leadingAnchor, spacing: 10)
             view.trailing(reference: trailingAnchor)
             view.height(size: 60)
         }

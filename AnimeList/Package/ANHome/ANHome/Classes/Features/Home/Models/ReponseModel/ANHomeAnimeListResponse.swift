@@ -31,11 +31,15 @@ struct ANHomeAnimeDataResponseModel: Codable {
     let id: Int
     let animeName: String
     let image: ANHomeAnimeImageResponseModel
+    let score: Double
+    let genrers: [ANHomeAnimeGenrers]
     
     enum CodingKeys: String, CodingKey {
         case id = "mal_id"
         case animeName = "title"
         case image = "images"
+        case score = "score"
+        case genrers = "genres"
     }
 }
 
@@ -56,6 +60,14 @@ struct ANHomeAnimeImageSizesResponseModel: Codable {
         case urlImageString = "image_url"
         case smallImageURLString = "small_image_url"
         case largeImageURLString = "large_image_url"
+    }
+}
+
+struct ANHomeAnimeGenrers: Codable {
+    let nameOfGender: String
+    
+    enum CodingKeys: String, CodingKey {
+        case nameOfGender = "name"
     }
 }
 
